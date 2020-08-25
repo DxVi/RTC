@@ -1,0 +1,18 @@
+{% extends 'category.html' %}
+{% block products_by_category %}
+<div class="products-list">
+    {% for category in categories %}
+        {% for product in products %}
+                <div class="card products-card" style="width: 15rem;">
+                    <img class="card-img-top"  src="/static/img/products/{{category.name}}/{{ product.image_url }}" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">{{ product.name }}</h6>
+                        <p class="card-text">PhP {{ product.price }}</p>
+                        <!-- <a href="#" class="btn btn-primary">Add To Cart</a> -->
+                    </div>
+                </div>
+            
+        {% endfor products %}
+    {% endfor categories %}
+</div>
+{% endblock products_by_category%}

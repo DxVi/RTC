@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="products-container">
+        <div class="category-sidebar">
+            <div> 
+                <a class="title-text" href="{% url 'products' %}">Categories</a>
+            </div>
+            {% for category in categories %}
+                <a class="regular-text" href="/products/category/?id={{category.id}}">{{ category.name }}</a>
+            {% endfor%}
+        </div>
+        <div class="products-card-container">
+             {% block products_by_category %}
+             {% endblock products_by_category %}
+        </div>
+    </div>
+{% endblock %}
