@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.core.mail import send_mail
-from .models import Product, Category, VanRental
+from .models import Product, Category, VanRental, Booking
 
 
 def home(request):
@@ -51,23 +51,36 @@ def contact(request):
 
 def booking(request):
     if request.method == 'POST':
-        name = request.POST['your-name']
-        phone = request.POST['your-phone']
-        email = request.POST['your-email']
-        address = request.POST['your-address']
-        schedule = request.POST['your-schedule']
-        time = request.POST['your-time']
-        message = request.POST['your-message']
+        name = request.POST['name']
+        phone = request.POST['phone']
+        tripfrom = request.POST['tripfrom']
+        tripto = request.POST['tripto']
+        date = request.POST['date']
+        time = request.POST['time']
+        pax = request.POST['pax']
+        message = request.POST['message']
 
         data = {
             'name': name,
             'phone': phone,
-            'email': email,
-            'address': address,
-            'schedule': schedule,
+            'tripfrom': tripfrom,
+            'tripto': tripto,
+            'date': date,
             'time': time,
+            'pax': pax,
             'message': message
         }
+
+        created_obj = Booking.objects.create(
+            name = name,
+            phone = phone,
+            tripfrom = tripfrom,
+            tripto = tripto,
+            date = date,
+            time = time,
+            pax = pax,
+            message = message
+        )
  
         # add try catch
         return render(request, 'booking.html', data)
@@ -80,3 +93,6 @@ def faq(request):
 def officers(request):
     return render(request, 'officers.html', {})
 
+def bookings(request):
+    bookings = Booking.objects.all().order_by('date','name')
+    return render(request, 'bookings.html', {'bookings': bookings})

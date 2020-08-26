@@ -59,7 +59,7 @@
 
     <!-- Main Header Start -->
     <div class="main-header-area">
-      <div class="classy-nav-container breakpoint-off">
+      <div class="classy-nav-container breakpoint-on">
         <div class="container">
           <!-- Classy Menu -->
           <nav class="classy-navbar justify-content-between" id="dentoNav">
@@ -97,6 +97,7 @@
 
             <!-- Booking Now Button -->
             <a href="{% url 'booking' %}" class="btn dento-btn booking-btn">Book Now</a>
+            <a href="{% url 'bookings' %}" class="btn dento-btn booking-btn">Bookings</a>
           </nav>
         </div>
       </div>
@@ -158,9 +159,10 @@
           <div class="single-footer-widget">
             <!-- Widget Title -->
             <h5 class="widget-title">Contact Details</h5>
-            <p>CDA 9520-1018000000046928</p>
-            <p>TIN 756-296-750-000</p>
+            
             <div class="footer-contact">
+              <p><i></i>CDA 9520-1018000000046928</p>
+              <p><i></i>TIN 756-296-750-000</p>
               <p><i class="icon_phone"></i> +63 9xx xxx xxxx</p>
               <p><i class="icon_pin"></i> San Agustin Romblon</p>
               <p><i class="icon_mail"></i> romblontransport@yahoo.com</p>
@@ -198,7 +200,7 @@
                 <li><a href="{% url 'contact' %}">Contact</a></li>
                 <li><a href="{% url 'booking' %}">Booking</a></li>
                 <li><a href="{% url 'faq' %}">FAQs</a></li>
-                <li><a href="{% url 'about' %}">Officers</a></li>
+                <li><a href="{% url 'officers' %}">Officers</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="#">Careers</a></li>
               </ul>

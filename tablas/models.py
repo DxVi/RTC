@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 
 class Category(models.Model):
@@ -23,3 +24,13 @@ class VanRental(models.Model):
     origin = models.CharField(max_length=255)
     destination = models.CharField(max_length=255)
     rental = models.FloatField()
+
+class Booking(models.Model):
+    name = models.CharField(max_length=30)
+    phone = models.CharField(max_length=30)
+    tripfrom = models.CharField(max_length=30)
+    tripto = models.CharField(max_length=30)
+    date = models.DateField(default=timezone.now)
+    time = models.CharField(max_length=10)
+    pax = models.IntegerField(default=0)
+    message = models.CharField(max_length=255)
