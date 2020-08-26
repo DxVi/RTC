@@ -19,3 +19,7 @@ class Offer(models.Model):
     description = models.CharField(max_length=255)
     discount = models.FloatField()
 
+class VanRental(models.Model):
+    origin = models.CharField(max_length=255)
+    destination = models.CharField(max_length=255)
+    rental = models.FloatField()

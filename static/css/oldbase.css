@@ -1,0 +1,462 @@
+.menu-text{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow:1px 1px 2px #888888;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.regular-text {
+    color: dodgerblue;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow:.5px .5px 1px #888888;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.title-text{
+    color: rgb(194, 108, 108);
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow:1px 1px 2px #888888;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.mono-text{
+    color: white;
+    font-size: 1rem;
+    text-shadow:1px 1px 2px #888888;
+    font-family: monospace;
+}
+
+.gen-info{
+    color: lightsalmon;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow:1px 1px 2px #888888;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* body {
+    margin:0;
+    padding:0;
+    font-family: 'Bookman Old Style';
+    background-image: url("/static/images/home/main.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* .base-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .base-header{
+    flex-basis: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: lightblue;
+    box-shadow: 3px 3px 5px black;
+} */
+
+/* .rtc-logo{
+    color:white;
+    font-weight: bolder;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    text-shadow: 1px 2px 3px black;
+    background: linear-gradient(-45deg, lightblue,  skyblue, dodgerblue, lightsalmon); 
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    border:4px solid darkgoldenrod;
+} */
+/* 
+.app-menus{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: green;
+}
+
+.base-content{
+    flex-basis: 90%;
+}
+
+.base-footer{
+    flex-basis: 5%;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 575px){
+    .menu-text, .regular-text, .mono-text, .gen-info {
+        font-size: 1rem;
+    }
+
+    .title-text{
+        font-size: 1.5rem;
+    }
+
+    nav a{
+        font-size: 50%;
+        text-align: center;
+    }
+
+    .base-footer{
+        text-align: center;
+        font-size: 67%;
+    }
+
+    .home-header{
+        text-align: center;
+    }
+
+    .home-header h2{
+        font-size:1.5rem;
+    }
+
+    .faq-container h2, .contact-container h2{
+        font-size: 1.5rem;
+    }
+
+    .faq-details{
+        text-align: left;
+    }
+
+    .officers{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .officers img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .officers h5, h6, p{
+        font-size: .8rem;
+    }
+
+
+} */
+/*---HOME---*/
+/* .home-container{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-header{
+    margin-top: .5rem;
+    background-color: #2196f3;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    text-shadow:1px 1px 3px  #888888;
+    color: white;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 10%;
+}
+
+.home-logo{
+    width: 100%;
+    flex-basis: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/*---PRODUCTS---*/
+.products-container{
+    height:100%;
+    padding: .5rem;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+}
+
+.category-sidebar{
+    height: 100%;
+    border: 1px solid  #2196f3;
+    flex-basis: 15%;
+    padding: .3rem;
+    box-shadow: 3px 3px 5px #888888;
+    display:flex;
+    flex-direction: column;
+    padding: 1%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: medium;
+    font-weight: bold;
+    text-shadow:1px 1px 3px #888888;
+}
+
+.category-sidebar a{
+    text-decoration: none;
+}
+
+.category-sidebar a:hover{
+    color: crimson;
+}
+
+
+.products-card-container{
+    height: 100%;
+    border: 1px solid  #2196f3;
+    flex-basis: 85%;
+    padding: .3rem;
+    box-shadow: 3px 3px 5px #888888;
+    margin-left: .5rem; 
+}
+
+.products-list{
+    height: 100%; 
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    box-shadow: 3px 3px 5px #888888;
+    
+}
+
+.products-card img{
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid gold;
+}
+
+.products-card h6,p{
+    color: lightslategray;
+    font-size: 60%;
+}
+
+/*---ABOUT-------------------------------*/
+.about-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.about-our-coop, .about-history{
+    width:100%;
+}
+
+.about-business-line, .about-address{
+    width: 50%;
+}
+
+.about-carousel{
+    width: 75%;
+}
+.about-our-coop, .about-history, .about-business-line, .about-address, .about-carousel{
+    padding: 1rem;
+    border:1px solid lightgray;
+}
+
+.about-our-coop, .about-history, .about-business-line, .about-address{
+    border-bottom: none;
+}
+
+.gen-info{
+    text-align: right;
+    width: 50%;
+}
+ 
+/*---FAQ---*/
+.faq-container{
+    font-family: monospace;
+    padding: 2rem;
+    color: darkblue;
+}
+
+.faq-container h2, .contact-container h2{
+    color: green;
+    text-shadow: 1px 1px 2px #888888;
+}
+
+.faq-details{
+    margin-left: 1rem;
+}
+/*---OFFICERS---*/ 
+.officers-container{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bookman Old Style';
+    text-shadow:1px 1px 2px #888888;
+    padding: 1rem;
+}
+
+.officers{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    padding: .2rem;
+    border:1px solid lightgray;
+}
+
+.officers-card{
+    border: 1px solid  #2196f3;
+    box-shadow: 3px 3px 5px #888888;
+    padding: .3rem;
+    align-items: center;
+}
+
+.officers img{
+    width: 100px;
+    height: 100px;
+}
+
+.officers h5{
+    color:darkblue;
+}
+
+.officers p{
+    color:maroon;
+    font-size: 1rem;
+}
+
+.officers h6{
+    color:blue;
+}
+
+/*---CONTACT US---*/
+
+.contact-container{
+    padding: 3rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+
+.contact-map{
+    width: 100%;
+    height: 30%;
+    /* padding: .5rem; */
+    border:1px solid lightgray;
+    box-shadow: 3px 3px 5px black;
+}
+
+.contact-info img{
+    width: 1rem;
+    height: 1rem;
+}
+
+/*---SIDEBAR---*/
+/* 
+.rtc-menu button {
+    font-size: 2rem;
+    padding: 0.5rem;
+    background: none;
+    background-color:crimson;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    transition: all 0.5s;
+    transform: translateX(-10rem);
+    width: 10rem;
+    background-color: lightblue;
+    height: 12rem;
+    box-shadow: 3px 3px 5px black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    z-index: 1;
+}
+ 
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar button{
+    background-color: crimson;
+}
+
+.sidebar a:hover{
+  color:green;
+}
+
+.sidebar-close-button {
+    border-radius: 50%;
+    border: 0.1rem black solid;
+    width: 1.9rem;
+    height: 1.9rem;
+    padding: .1rem;
+    font-size: 1rem;
+    padding-top: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+   */
+/*---WEATHER---*/
+.weather-container{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.weather-header{
+    border:1px solid red;
+    flex-basis: 20%;
+    align-self: stretch;
+}
+
+.weather-content{
+    border:1px solid blue;
+    flex-basis: 50%;
+    align-self: stretch;
+}
+
+.weather-footer{
+    border:1px solid green;
+    flex-basis: 30%;
+    align-self: stretch;
+}

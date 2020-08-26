@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load static %}{% block breadcrumb_bg %} {% static 'img/site/about.png' %} {% endblock %} 
+{% block breadcrumb    %} FAQ {% endblock %}
+{% block page_name     %} FAQs {% endblock %}
 
 {% block content %}
- 
  
   <div class="faq-container">
     <div id="wrapper">
@@ -192,5 +195,9 @@
   </div>
     
 </div>
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 {% endblock %}
