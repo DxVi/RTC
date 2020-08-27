@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block breadcrumb_bg %} {% static 'img/site/booking.png' %} {% endblock %} 
+{% block breadcrumb    %} Login {% endblock %}
+{% block page_name     %} Login {% endblock %}
+
+{% block content %}
+    {% if switch and found == 1 %}
+        <center>
+            {% for member in members %}
+                <h3> Welcome {{ member.fname }} </h3>
+            {% endfor %}
+
+                <h3> See booking details below : </h3>
+            {% for booking in bookings %}
+                <p>
+                    Date :  {{ booking.date }}, {{ booking.time }},  
+                    {{ booking.tripfrom }},  {{ booking.tripto }} , 
+                    {{ booking.pax }}, {{ booking.name }}, 
+                    {{ booking.phone }}, {{ booking.message }} 
+                </p>
+            {% endfor %}
+            <hr>
+            <h3>Trip Board Summary:</h3>
+            {% for t in tripboard %}
+                <p>{{ t.queue }} | {{ t.lname }} | {{ t.r1 }} | {{ t.r2 }} | {{ t.r3 }} | {{ t.r4 }} | {{ t.r5 }} </p>
+            {% endfor %}
+            <hr>
+
+        </center>
+    {% else %}
+        {% if found == 0 %} 
+            <center><h2>Invalid Login !!!</h2></center>  
+        {% endif %}
+            <!-- Member Login Area Start -->
+            <section class="member-login-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'img/site/booking.png' %});">
+                <div class="container">
+                    <div class="row">
+                        <!-- Section Heading -->
+                        <div class="col-12">
+                            <div class="section-heading text-center white">
+                                <h2>Member Login</h2>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Appointment Form -->
+                            <div class="appointment-form">
+                                <form action="{% url 'member' %}" method="POST">
+                                    {% csrf_token %}
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group mb-30">
+                                                <input type="text" name="lname" class="form-control" placeholder="username" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group mb-30">
+                                                <input type="text" name="plate" class="form-control" placeholder="password" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <button type="submit" class="btn dento-btn">Login</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Member Login Area End -->
+    {% endif %}
+{% endblock %}

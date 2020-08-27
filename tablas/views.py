@@ -1,7 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.core.mail import send_mail
-from .models import Product, Category, VanRental, Booking
+from django.utils import timezone
+from .models import Product, Category, VanRental, Booking, Members, TripBoard, Logins
 
 
 def home(request):
@@ -96,3 +97,31 @@ def officers(request):
 def bookings(request):
     bookings = Booking.objects.all().order_by('date','name')
     return render(request, 'bookings.html', {'bookings': bookings})
+
+def member(request):
+    if request.method == 'POST':
+        _lname = request.POST['lname']
+        _plate = request.POST['plate']
+        found = 0
+        members = Members.objects.filter(lname = _lname.upper(), plate = _plate.upper())
+        found =  members.count
+        bookings = Booking.objects.all().order_by('date','name')
+        tripboard = TripBoard.objects.all().order_by('queue')
+
+        if found == 0:
+            success = False
+        else:
+            success = True
+
+        created_obj = Logins.objects.create(
+            lname = _lname,
+            plate = _plate,
+            valid = success
+            # date = timezone.now
+        )
+
+
+
+        return render(request, 'member.html', {'switch': True, 'bookings': bookings, 'members': members, 'tripboard': tripboard, 'found': found})
+    else:    
+        return render(request, 'member.html', {'switch': False})
