@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block breadcrumb_bg %} {% static 'img/site/officers.png' %} {% endblock %} 
 {% block breadcrumb    %} Booking {% endblock %}
 {% block page_name     %} Booking {% endblock %}
 
@@ -23,7 +22,7 @@
 {% else %}
 
 <!-- Book A Trip Area Start -->
-<section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'img/site/booking.png' %});">
+<section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'img/site/booking_bg.jpg' %});">
     <div class="container">
       <div class="row">
         <!-- Section Heading -->
@@ -142,7 +141,7 @@
                   </div>
                 </div>
                 <div class="col-12 text-center">
-                  <button type="submit" class="btn dento-btn">Book Now</button>
+                  <button type="submit" class="btn rtc-btn">Book Now</button>
                 </div>
               </div>
             </form>

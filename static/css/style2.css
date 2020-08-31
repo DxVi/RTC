@@ -1157,3 +1157,134 @@ text-shadow: none;
 	}
 
 	
+/*---PRODUCTS---*/
+.products-container{
+    height:100%;
+    padding: .5rem;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+}
+
+.category-sidebar{
+    height: 100%;
+    border: 1px solid  #2196f3;
+    flex-basis: 15%;
+    padding: .3rem;
+    box-shadow: 3px 3px 5px #888888;
+    display:flex;
+    flex-direction: column;
+    padding: 1%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: medium;
+    font-weight: bold;
+    text-shadow:1px 1px 3px #888888;
+}
+
+.category-sidebar a{
+    text-decoration: none;
+}
+
+.category-sidebar a:hover{
+    color: crimson;
+}
+
+
+.products-card-container{
+    height: 100%;
+    border: 1px solid  #2196f3;
+    flex-basis: 85%;
+    padding: .3rem;
+    box-shadow: 3px 3px 5px #888888;
+    margin-left: .5rem; 
+}
+
+.products-list{
+    height: 100%; 
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    box-shadow: 3px 3px 5px #888888;
+    
+}
+
+.products-card img{
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid gold;
+}
+
+.products-card h6,p{
+    color: lightslategray;
+    font-size: 60%;
+}
+
+/*---FAQ---*/
+.faq-container{
+    font-family: monospace;
+    padding: .1rem;
+    color: darkblue;
+}
+
+.faq-container h2, .contact-container h2, .about-GenInfo button, .about-purposes button, .about-goals button, .section-heading h2{
+    color: dodgerblue;
+    text-shadow: 1px 1px 2px #888888;
+}
+ 
+/*---OFFICERS---*/ 
+.officers-container{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bookman Old Style';
+    text-shadow:1px 1px 2px #888888;
+    padding: .1rem;
+}
+
+.officers1 .officers-card{
+	border: 1px solid  salmon;
+}
+.officers{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    padding: .2rem;
+}
+
+.officers .card-body{
+	padding: .2rem;
+}
+.officers-card{
+    border: 1px solid  #2196f3;
+    box-shadow: 3px 3px 5px #888888;
+    align-items: center;
+}
+
+.officers img{
+    width: 100px;
+    height: 100px;
+}
+
+.officers h5{
+    color:darkblue;
+}
+
+.officers p{
+    color:maroon;
+    font-size: 1rem;
+}
+
+.officers h6{
+    color:blue;
+}
