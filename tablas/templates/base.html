@@ -1,13 +1,12 @@
-{% load static %}
+ {% load static %}
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="ROMBLON TRANSPORT COOPERATIVE (RTC)">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="description" content="ROMBLON TRANSPORT COOPERATIVE (RTC)"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
     <!-- Title -->
     <title>RTC</title>
@@ -16,177 +15,114 @@
     <link rel="icon" href="{% static 'img/site/favicon.ico' %}">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
   </head>
-
   <body>
-    <!-- Preloader -->
-    <div id="preloader">
-      <div class="preload-content">
-        <div id="dento-load"></div>
-      </div>
-    </div>
+      <div class="base-container">
+          <div class="base-header">
+            <!-- <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#666666;"> -->
+            <nav class="navbar navbar-expand-lg navbar-dark " style="background-image: url({% static 'img/site/banner.jpg' %});">
 
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area">
-      
-
-      <!-- Main Header Start -->
-      <div class="main-header-area">
-        <div class="classy-nav-container breakpoint-on">
-          <div class="container">
-            <!-- Classy Menu -->
-            <nav class="classy-navbar justify-content-between" id="dentoNav">
-
-              <!-- Logo -->
-              <!-- <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'img/site/logo56.png' %}" alt=""></a> -->
-              <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'img/site/rtc.png' %}" alt=""></a>
-
-              <!-- Navbar Toggler -->
-              <div class="classy-navbar-toggler">
-                  <span class="navbarToggler"><span></span><span></span><span></span></span>
-              </div>
-
-              <!-- Menu -->
-              <div class="classy-menu">
-
-                <!-- Close Button -->
-                <div class="classycloseIcon">
-                      <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                <div class="rtc-logo">
+                    <a href="{% url 'home' %}" ><img src="{% static 'img/site/logo.png' %}" alt=""></a>
                 </div>
+                <a class="menu-btn menu-text" href="{% url 'home' %}">Home</a>
+                <a class="menu-btn menu-text" href="{% url 'booking'    %}">Booking</a>
+                <a class="menu-btn menu-text" href="{% url 'contact' %}">Contact Us</a>
 
-                <!-- Nav Start -->
-                <div class="classynav">
-                      <ul id="nav">
-                        <li><a href="{% url 'home'     %}">Home</a></li>
-                        <li><a href="{% url 'about'    %}">About</a></li>
-                        <li><a href="{% url 'products' %}">Products</a></li>
-                        <li><a href="{% url 'service'  %}">Services</a></li>
-                        <li><a href="{% url 'contact'  %}">Contact</a></li>
-                        <li><a href="{% url 'faq'      %}">FAQs</a></li>
-                        <li><a href="{% url 'officers' %}">Officers</a></li>
-                      </ul>
-                </div>
-                <!-- Nav End -->
-                </div>
-
-                <!-- Booking Now Button -->
-                <a href="{% url 'booking' %}" class="btn rtc-btn booking-btn">Book Now</a>
-                <a href="{% url 'member' %}" class="btn rtc-btn booking-btn">Login</a>
-                </form>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-
-
-    {% block breadcrumbs %}
-      <!-- ***** Breadcrumb Area Start ***** -->
-    <div class="breadcumb-area bg-img " style="background-image: url({% static 'img/site/banner.jpg' %});">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-12">
-            <h2 class="title">{% block breadcrumb %} {% endblock %}</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="breadcumb--con">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">{% block page_name %} {% endblock %}</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ***** Breadcrumb Area End ***** -->
-
-
-    {% endblock %}
-
-    {% block content%}
-    
-
-    {% endblock %}
-
-
-
-    <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-area bg-img " style="background-image: url({% static 'img/site/footer.jpg' %});">
-      <div class="container">
-        <div class="row">
-          <!-- Single Footer Widget -->
-          <div class="col-12 col-sm-7 col-lg-3">
-            <div class="single-footer-widget">
-              <!-- Widget Title -->
-              <h5 class="widget-title">Contact Details</h5>
-              <div class="footer-contact">
-                <p><i class="icon_phone"></i> +63 9xx xxx xxxx</p>
-                <p><i class="icon_pin"></i> San Agustin Romblon</p>
-                <p><i class="icon_mail"></i> romblontransport@yahoo.com</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Single Footer Widget -->
-          <div class="col-12 col-sm-5 col-lg">
-            <div class="single-footer-widget">
-              <!-- Widget Title -->
-              <h5 class="widget-title">Quick Links</h5>
-              <!-- Quick Links Nav -->
-              <nav>
-                <ul class="quick-links">
-                  <li><a href="{% url 'about' %}">About</a></li>
-                  <li><a href="{% url 'products' %}">Products</a></li>
-                  <li><a href="{% url 'service' %}">Services</a></li>
-                  <li><a href="{% url 'contact' %}">Contact</a></li>
-                  <li><a href="{% url 'booking' %}">Booking</a></li>
-                  <li><a href="{% url 'faq' %}">FAQs</a></li>
-                  <li><a href="{% url 'officers' %}">Officers</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Careers</a></li>
+                <!-- <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{% url 'about'    %}">About</a>
+                      <a class="dropdown-item" href="{% url 'service'  %}">Services</a>
+                      <a class="dropdown-item" href="{% url 'officers' %}">Officers</a>
+                      <a class="dropdown-item" href="{% url 'faq'      %}">FAQs</a>
+                      
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" class="dropdown-item" href="#">More items...</a>
+                    </div>
+                  </div> -->
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+              
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link  menu-text" href="{% url 'products'    %}">Products</a>
+                    <a class="nav-link  menu-text" href="{% url 'about'    %}">About</a>
+                    <a class="nav-link  menu-text" href="{% url 'service'  %}">Services</a>
+                    <a class="nav-link  menu-text" href="{% url 'officers' %}">Officers</a>
+                    <a class="nav-link  menu-text" href="{% url 'faq'      %}">FAQs</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  menu-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      RTC
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item  menu-text" href="#">Member Login</a>
+                      <a class="dropdown-item  menu-text" href="admin/">Admin</a>
+                     
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item  menu-text" href="#">extras...</a>
+                    </div>
+                  </li>
                 </ul>
-              </nav>
-            </div>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
           </div>
-        </div>
+
+          {% block breadcrumbs %}
+          <!-- ***** Breadcrumb Area Start ***** -->
+          <!-- <div class="breadcumb--con">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">{% block page_name %} {% endblock %}</li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- ***** Breadcrumb Area End ***** -->
+          {% endblock %}
+          
+          <div class="base-content">
+              {% block content %}
+              {% endblock %}
+          </div>
+
+          <div class="base-footer">
+            <footer class="page-footer font-small special-color-dark pt-0">
+              <div class="footer-copyright text-center py-3">© 2020 Copyright: dixv</div>
+            </footer>
+          </div>
       </div>
 
-      <!-- Copywrite Area -->
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="copywrite-content">
-              <p>Copyright &copy;2020 | All rights reserved</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- ***** Footer Area End ***** -->
-
-    <!-- ******* All JS ******* -->
-    <!-- jQuery js -->
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <!-- Popper js -->
-    <script src="{% static 'js/popper.min.js' %}"></script>
-    <!-- Bootstrap js -->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <!-- All js -->
-    <script src="{% static 'js/dento.bundle.js' %}"></script>
-    <!-- Active js -->
-    <script src="{% static 'js/default-assets/active.js' %}"></script>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+    
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    
+    <script type="text/JavaScript">
+         
+    </script>
   </body>
-
 </html>

@@ -59,15 +59,18 @@ Last Update: Dec 05, 2018
 @import url(magnific-popup.css);
 @import url(font-awesome.min.css);
 @import url(style2.css);
+@import url(base.css);
 * {
   margin: 0;
   padding: 0; }
 
 body {
   /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New';
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 14px; 
+  background-color: dodgerblue;
+}
 
 h1,
 h2,
@@ -75,7 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New';
   color: gray;
   line-height: 1.4;
   font-weight: 600; }
@@ -969,9 +972,9 @@ ul {
   .breadcumb--con .breadcrumb .breadcrumb-item,
   .breadcumb--con .breadcrumb .breadcrumb-item > a,
   .breadcumb--con .breadcrumb .breadcrumb-item.active {
-    font-size: 14px;
+    font-size: 1.2rem;
     text-transform: capitalize;
-    color: #333333;
+    color:lightgray;
     font-weight: 500; }
     .breadcumb--con .breadcrumb .breadcrumb-item:focus, .breadcumb--con .breadcrumb .breadcrumb-item:hover,
     .breadcumb--con .breadcrumb .breadcrumb-item > a:focus,
@@ -980,7 +983,7 @@ ul {
     .breadcumb--con .breadcrumb .breadcrumb-item.active:hover {
       color: #00aeef; }
   .breadcumb--con .breadcrumb .breadcrumb-item.active {
-    color: #707070; }
+    color:lightgreen; }
     .breadcumb--con .breadcrumb .breadcrumb-item.active:focus, .breadcumb--con .breadcrumb .breadcrumb-item.active:hover {
       color: #707070; }
   .breadcumb--con .breadcrumb .page-item:first-child .page-link {
@@ -992,6 +995,7 @@ ul {
     border-bottom-right-radius: 0; }
   .breadcumb--con .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
     content: "\f105";
+    color: lightgreen;
     font-family: 'FontAwesome'; }
 
 .single-blog-item {

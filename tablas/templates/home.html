@@ -3,374 +3,372 @@
 
 {% block breadcrumbs %}
 {% endblock %}
-{% block content %}
-  <!-- ***** Welcome Area Start ***** -->
-  <section class="welcome-area">
-    <!-- Welcome Slides -->
-    <div class="welcome-slides owl-carousel">
-      <!-- Single Welcome Slide -->
-      <div class="welcome-welcome-slide bg-img" style="background-image: url({% static '/img/site/logo600.png' %});">
-      </div>
 
-      <!-- Single Welcome Slide -->
-      <div class="welcome-welcome-slide bg-img bg-gradient-overlay " style="background-image: url({% static 'img/site/logo600.png' %});">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-12">
-              <!-- Welcome Text -->
-              <div class="welcome-text text-center">
-                <h2 data-animation="fadeInUp" data-delay="100ms">"We are the 1st Transport Cooperative in the Province of Romblon"</h2>
-                <p data-animation="fadeInUp" data-delay="300ms">CDA Reg. No. 9520-1018000000046928 | 13 Sep 2019</p>
-                <div class="welcome-btn-group">
-                  <a href="{% url 'about' %}" class="btn rtc-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
-                  <a href="{% url 'contact' %}" class="btn rtc-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+{% block content %}
+  
+  <!-- ***** Welcome Area Start ***** -->
+  <div id="carouselWelcome" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="3000">
+        <img src="{% static 'img/site/welcome1.png' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-interval="3000">
+        <img src="{% static 'img/site/welcome2.png' %}"  class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-interval="3000">
+        <img src="{% static 'img/site/welcome3.png' %}"  class="d-block w-100" alt="...">
       </div>
     </div>
-  </section>
+  </div>
   <!-- ***** Welcome Area End ***** -->
 
-  <!-- ****** About Us Area Start ******* -->
-  <section class="RTC-about-us-area section-padding-100-0">
+  <!-- ***** About Area Start ***** -->
+  <section class="about section-padding-100-0">
     <div class="container">
       <div class="row align-items-center">
-        <!-- About Us Thumbnail -->
         <div class="col-12 col-md-6">
-          <div class="about-us-thumbnail mb-50">
-            <center>
-              <img src="{% static 'img/site/logo300.png' %}" alt="">
-            </center>
-          </div>
-        </div>
-        <!-- About Content -->
-        <div class="col-12 col-md-6">
-          <div class="about-us-content mb-50">
-            <!-- Section Heading -->
+          <div class="about-content mb-50">
             <div class="section-heading">
-              <h2>About Us</h2>
-              <div class="line"></div>
+              <h2 class="title-text">About Us</h2>
             </div>
-            <p>ROMBLON TRANSPORT COOPERATIVE (RTC)</span> was formed in compliance with the  
-              PUV  modernization   program. The existing  local transport operators  
-              and van owners joined  force  to  form  the  cooperative  complying 
-              with the standards set by law.</h5>
-              <p>
-                <span>RTC</span> organized the association of Tourist, UV Express, Jeepney  and 
-                Rental transport  services in the Province of Romblon to provide 
-                quality transport services.
-              </p>
-              <p>
-                <span>RTC</span> aims to address transport problem and support the development and 
-                effort of the government to modernize transport system and ultimately 
-                bring about economic development and progress.
-              </p>
+            <br/><br/>
+            <p class="text-justify regular-text">
+              <span><strong>ROMBLON TRANSPORT COOPERATIVE (RTC)</strong></span> 
+              was formed in compliance with the PUV  modernization   program. The 
+              existing  local transport operators and van owners joined  force to  
+              form  the  cooperative  complying with the standards set by law.
+            </p>
+            <p class="text-justify regular-text">
+              <span><strong>RTC</strong></span> organized the association of Tourist, 
+              UV Express, Jeepney and Rental transport services in the Province of 
+              Romblon to provide quality transport services.
+            </p>
+            <p class="text-justify regular-text">
+              <span><strong>RTC</strong></span> aims to address transport problem and 
+              support the development and effort of the government to modernize transport 
+              system and ultimately bring about economic development and progress.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ****** About Us Area End ****** -->
+  <br/><br/>
+  <!-- ***** About Area End ***** -->
 
-  <div class="container">
-    <div class="RTC-border clearfix"></div>
-  </div>
-
-  <!-- Cool Facts Area Start -->
-  <section class="RTC-cta-area">
-    <div class="container">
-      <div class="row">
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_key"></i>
-            <h2><span class="counter">35</span></h2>
-            <h5>No. of Vans</h5>
-          </div>
-        </div>
-
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_star"></i>
-            <h2><span class="counter">39</span></h2>
-            <h5>Founding Members</h5>
-          </div>
-        </div>
-
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_lightbulb"></i>
-            <h2><span class="counter">35</span></h2>
-            <h5>Operator</h5>
-          </div>
-        </div>
-
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_id"></i>
-            <h2><span class="counter">4</span></h2>
-            <h5>Driver</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Cool Facts Area End -->
-
-  <!-- Service Area Start -->
-  <section class="RTC-service-area section-padding-100-0 bg-img bg-gradient-overlay clearfix" style="background-image: url({% static 'img/site/services.jpg' %});">
+  <!-- ***** Services Area Start ***** -->
+  <section class="services section-padding-100-0 bg-gradient-overlay" style="background-image: url({% static 'img/site/services.jpg' %});">
     <div class="container">
       <div class="row align-items-center">
-        <!-- Service Content -->
-        <div class="col-12 col-lg-6">
-          <div class="service-content mb-30">
-            <!-- Section Heading -->
-            <div class="section-heading white">
-              <h2>Our Services</h2>
-              <div class="line"></div>
+        <div class="col-12 col-md-6">
+          <div class="services-content mb-50">
+            <br/><br/>
+            <div class="section-heading">
+              <h2 class="title-text">Our Services</h2>
             </div>
-
-            <div class="row">
-              <div class="col-5 col-md-4">
-                <div class="single-service mb-70">
-                  <!-- <img src="{% static 'img/site/s1.png' %}" alt=""> -->
-                  <h6>Sales of Vehicle Parts</h6>
-                </div>
-              </div>
-
-              <div class="col-5 col-md-4">
-                <div class="single-service mb-70">
-                  <!-- <img src="{% static 'img/site/s2.jpg' %}" alt=""> -->
-                  <h6>Sales of Vehicle Accessories</h6>
-                </div>
-              </div>
-
-              <div class="col-5 col-md-4">
-                <div class="single-service mb-70">
-                  <!-- <img src="{% static 'img/site/s3.jpg' %}" alt=""> -->
-                  <h6>AUV Operation</h6>
-                </div>
-              </div>
-
-              <div class="col-5 col-md-4">
-                <div class="single-service mb-70">
-                  <!-- <img src="{% static 'img/site/s4.jpg' %}" alt=""> -->
-                  <h6>Jeepney Operation</h6>
-                </div>
-              </div>
-
-              <div class="col-5 col-md-4">
-                <div class="single-service mb-70">
-                  <!-- <img src="{% static 'img/site/s5.jpg' %}" alt=""> -->
-                  <h6>Tour Van Rental</h6>
-                </div>
-              </div>
-
-              <div class="col-5 col-md-4">
-                <div class="single-service mb-70">
-                  <!-- <img src="{% static 'img/site/s6.jpg' %}" alt=""> -->
-                  <h6>Car Insurance</h6>
-                </div>
-              </div>
+            <br/><br/>
+            <div class="services">
+              <ul>
+                <li><h4>Sales of Vehicles Parts</h4></li>
+                <li><h4>Sales of Vehicles Accessories</h4></li>
+                <li><h4>AUV Operation</h4></li>
+                <li><h4>Jeepney Operation</h4></li>
+                <li><h4>Tour Van Rental</h4></li>
+                <li><h4>Car Insurance</h4></li>
+            </ul>
             </div>
-          </div>
-        </div>
-
-        <!-- Video Area -->
-        <div class="col-12 col-lg-6">
-          <div class="RTC-video-area mb-100">
-            <!-- <img src="{% static 'img/site/rtc.jpg' %}" alt=""> -->
-            <!-- Play Button -->
-            <a href="#" class="video-play-button"><i class="fa fa-play" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Service Area End -->
+  <!-- ***** Services Area End ***** -->
 
-  <!-- Van Rental Fare Matrix Area Start -->
-  <section class="RTC-pricing-table-area section-padding-100">
+  <!-- ***** Fare Area Start ***** -->
+  <section class="fare section-padding-100-0 bg-gradient-overlay" style="background-image: url({% static 'img/site/fare.jpg' %});">
     <div class="container">
-      <div class="row">
-        <!-- Section Heading -->
-        <div class="col-12">
-          <div class="section-heading text-center">
-            <h2>Van Rental Fare Matrix</h2>
-            <div class="line"></div>
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <div class="about-content mb-50">
+          <br/><br/>
+          <div class="section-heading">
+            <h2 class="title-text text-center">Van Rental Fare Matrix</h2>
           </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <div class="RTC-price-table table-responsive">
-            <table class="table table-borderless mb-0">
-              <thead>
-                <tr>
-                  <th scope="col">Origin</th>
-                  <th scope="col">Destination</th>
-                  <th scope="col">Rental Fare</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% for rental in van_rentals %}
-                  <tr>
-                    <th scope="row">{{ rental.origin }}</th>
-                    <td>{{ rental.destination }}</td>
-                    <td>PhP {{ rental.rental }}</td>
-                  </tr>
-                {% endfor %}
-              </tbody>
-            </table>
+          
+          <div class="accordion" id="accordionFare">
+          <div class="card">
+            <div class="card-header" id="Odiongan">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Odiongan
+                </button>
+              </h2>
+            </div>
+      
+            <div id="collapseOne" class="collapse show" aria-labelledby="Odiongan" data-parent="#accordionFare">
+              <div class="card-body">
+                <!--Odiongan data -->
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">Origin</th>
+                      <th scope="col">Destination</th>
+                      <th scope="col">Rental Fare</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for rental in van_rentals %}
+                      {% if rental.origin == 'Odiongan' %}
+                        <tr>
+                          <td>{{ rental.origin }}</td>
+                          <td>{{ rental.destination }}</td>
+                          <td>PhP {{ rental.rental }}</td>
+                        </tr>
+                      {% endif %}
+                    {% endfor %} 
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="col-12">
-          <div class="more-btn text-center mt-50">
-            <a href="#" class="btn rtc-btn">Other Fare Matrix<i class="fa fa-angle-double-right"></i></a>
+          <div class="card">
+            <div class="card-header" id="SanAgustin">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  San Agustin
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="SanAgustin" data-parent="#accordionFare">
+              <div class="card-body">
+                <!--San Agustin data-->
+                <table class="table table-hover ">
+                  <thead>
+                    <tr>
+                      <th scope="col">Origin</th>
+                      <th scope="col">Destination</th>
+                      <th scope="col">Rental Fare</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for rental in van_rentals %}
+                      {% if rental.origin == 'San Agustin' %}
+                        <tr>
+                          <td>{{ rental.origin }}</td>
+                          <td>{{ rental.destination }}</td>
+                          <td>PhP {{ rental.rental }}</td>
+                        </tr>
+                      {% endif %}
+                    {% endfor %} 
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="Tugdan">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Tugdan
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="Tugdan" data-parent="#accordionFare">
+              <div class="card-body">
+                <!--Tugdan data-->
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">Origin</th>
+                      <th scope="col">Destination</th>
+                      <th scope="col">Rental Fare</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for rental in van_rentals %}
+                      {% if rental.origin == 'Tugdan' %}
+                        <tr>
+                          <td>{{ rental.origin }}</td>
+                          <td>{{ rental.destination }}</td>
+                          <td>PhP {{ rental.rental }}</td>
+                        </tr>
+                      {% endif %}
+                    {% endfor %} 
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="Others">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Other Fares
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="Others" data-parent="#accordionFare">
+              <div class="card-body">
+                <!--Others data-->
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">Origin</th>
+                      <th scope="col">Destination</th>
+                      <th scope="col">Rental Fare</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>---</td>
+                      <td>---</td>
+                      <td>---</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Van Rental Fare Matrix Area End -->
+  <!-- ***** Fare Area End *****-->
 
-  <!-- Book A Trip Area Start -->
-<section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'img/site/booking.jpg' %});">
-  <div class="container">
-    <div class="row">
-      <!-- Section Heading -->
-      <div class="col-12">
-        <div class="section-heading text-center white">
-          <h2>Book A Trip</h2>
-          <div class="line"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <!-- Appointment Form -->
-        <div class="appointment-form">
-          <form action="{% url 'booking' %}" method="POST">
-            {% csrf_token %}
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group mb-30">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group mb-30">
-                  <input type="text" name="phone" class="form-control" placeholder="Your Phone" required>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group mb-30">
-                  <select name="tripfrom" class="form-control">
-                    <option value="origin">Origin</option>
-                    <option value="San Agustin">San Agustin</option>
-                    <option value="Odiongan">Odiongan</option>
-                    <option value="Calatrava">Calatrava</option>
-                    <option value="San Andres">San Andres</option>
-                    <option value="Sta. Maria">Sta. Maria</option>
-                    <option value="Alcantara">Alcantara</option>
-                    <option value="Ferrol">Ferrol</option>
-                    <option value="Looc">Looc</option>
-                    <option value="Sta. Fe">Sta. Fe</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group mb-30">
-                  <select name="tripto" class="form-control">
-                    <option value="destination">Destination</option>
-                    <option value="Odiongan">Odiongan</option>
-                    <option value="San Agustin">San Agustin</option>
-                    <option value="Calatrava">Calatrava</option>
-                    <option value="San Andres">San Andres</option>
-                    <option value="Sta. Maria">Sta. Maria</option>
-                    <option value="Alcantara">Alcantara</option>
-                    <option value="Ferrol">Ferrol</option>
-                    <option value="Looc">Looc</option>
-                    <option value="Sta. Fe">Sta. Fe</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group mb-30">
-                  <input type="text" name="date" class="form-control" placeholder="Date" required>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group mb-30">
-                  <select name="time" class="form-control">
-                    <option value="">Choose Your Trip Timing</option>
-                    <option value="09:00 AM">09:00 AM</option>
-                    <option value="02:00 PM">02:00 PM</option>
-                    <option value="05:00 PM">05:00 PM</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group mb-30">
-                  <select name="pax" class="form-control">
-                    <option value="">No. of passengers (including you) ?</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group mb-30">
-                  <textarea name="message" class="form-control" placeholder="Your Message"></textarea>
-                </div>
-              </div>
-              <div class="col-12 text-center">
-                <button type="submit" class="btn rtc-btn">Book Now</button>
-              </div>
+  <!-- ***** Booking Area Start ***** -->
+  <section class="booking section-padding-100-0 bg-gradient-overlay" style="background-image: url({% static 'img/site/booking.jpg' %});">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <div class="about-content mb-50">
+            <br/><br/>
+            <div class="section-heading">
+              <h2 class="title-text text-center">Booking</h2>
             </div>
-          </form>
+
+            <!-- Appointment Form -->
+            <div class="appointment-form">
+              <form action="{% url 'booking' %}" method="POST">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group mb-30">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group mb-30">
+                      <input type="text" name="phone" class="form-control" placeholder="Your Phone" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group mb-30">
+                      <select name="tripfrom" class="form-control">
+                        <option value="origin">Your Origin</option>
+                        <option value="San Agustin">San Agustin</option>
+                        <option value="Odiongan">Odiongan</option>
+                        <option value="Calatrava">Calatrava</option>
+                        <option value="San Andres">San Andres</option>
+                        <option value="Sta. Maria">Sta. Maria</option>
+                        <option value="Alcantara">Alcantara</option>
+                        <option value="Ferrol">Ferrol</option>
+                        <option value="Looc">Looc</option>
+                        <option value="Sta. Fe">Sta. Fe</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group mb-30">
+                      <select name="tripto" class="form-control">
+                        <option value="destination">Your Destination</option>
+                        <option value="Odiongan">Odiongan</option>
+                        <option value="San Agustin">San Agustin</option>
+                        <option value="Calatrava">Calatrava</option>
+                        <option value="San Andres">San Andres</option>
+                        <option value="Sta. Maria">Sta. Maria</option>
+                        <option value="Alcantara">Alcantara</option>
+                        <option value="Ferrol">Ferrol</option>
+                        <option value="Looc">Looc</option>
+                        <option value="Sta. Fe">Sta. Fe</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <div class="form-group mb-30">
+                      <input type="text" name="date" class="form-control" placeholder="Your Trip Date" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group mb-30">
+                      <select name="time" class="form-control">
+                        <option value="">Your Trip Time</option>
+                        <option value="09:00 AM">09:00 AM</option>
+                        <option value="02:00 PM">02:00 PM</option>
+                        <option value="05:00 PM">05:00 PM</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group mb-30">
+                      <select name="pax" class="form-control">
+                        <option value="">No. of passengers (including you)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-group mb-30">
+                      <textarea name="message" class="form-control" placeholder="Your Message"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn rtc-btn">Book Now</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- Book A Trip Area End -->
+  </section>
+<!-- ***** Booking Area End ***** -->
 
   {% endblock %}

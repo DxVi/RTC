@@ -1,0 +1,192 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ROMBLON TRANSPORT COOPERATIVE (RTC)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>RTC</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/site/favicon.ico' %}">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="preload-content">
+        <div id="dento-load"></div>
+      </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+      
+
+      <!-- Main Header Start -->
+      <div class="main-header-area">
+        <div class="classy-nav-container breakpoint-on">
+          <div class="container">
+            <!-- Classy Menu -->
+            <nav class="classy-navbar justify-content-between  btn-success" id="dentoNav">
+
+              <!-- Logo -->
+              <!-- <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'img/site/logo56.png' %}" alt=""></a> -->
+              <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'img/site/rtc.png' %}" alt=""></a>
+
+              <!-- Navbar Toggler -->
+              <div class="classy-navbar-toggler">
+                  <span class="navbarToggler"><span></span><span></span><span></span></span>
+              </div>
+
+              <!-- Menu -->
+              <div class="classy-menu">
+
+                <!-- Close Button -->
+                <div class="classycloseIcon">
+                      <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+
+                <!-- Nav Start -->
+                <div class="classynav">
+                      <ul id="nav">
+                        <li><a href="{% url 'home'     %}">Home</a></li>
+                        <li><a href="{% url 'about'    %}">About</a></li>
+                        <li><a href="{% url 'products' %}">Products</a></li>
+                        <li><a href="{% url 'service'  %}">Services</a></li>
+                        <li><a href="{% url 'contact'  %}">Contact</a></li>
+                        <li><a href="{% url 'faq'      %}">FAQs</a></li>
+                        <li><a href="{% url 'officers' %}">Officers</a></li>
+                      </ul>
+                </div>
+                <!-- Nav End -->
+                </div>
+
+                <!-- Booking Now Button -->
+                <a href="{% url 'booking' %}" class="btn rtc-btn booking-btn">Book Now</a>
+                <a href="{% url 'member' %}" class="btn rtc-btn booking-btn">Login</a>
+                </form>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+
+    {% block breadcrumbs %}
+      <!-- ***** Breadcrumb Area Start ***** -->
+    <div class="breadcumb-area bg-img " style="background-image: url({% static 'img/site/banner.jpg' %});">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12">
+            <h2 class="title">{% block breadcrumb %} {% endblock %}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="breadcumb--con">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{% block page_name %} {% endblock %}</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Breadcrumb Area End ***** -->
+
+
+    {% endblock %}
+
+    {% block content%}
+    
+
+    {% endblock %}
+
+
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area bg-img " style="background-image: url({% static 'img/site/footer.jpg' %});">
+      <div class="container">
+        <div class="row">
+          <!-- Single Footer Widget -->
+          <div class="col-12 col-sm-7 col-lg-3">
+            <div class="single-footer-widget">
+              <!-- Widget Title -->
+              <h5 class="widget-title">Contact Details</h5>
+              <div class="footer-contact">
+                <p><i class="icon_phone"></i> +63 9xx xxx xxxx</p>
+                <p><i class="icon_pin"></i> San Agustin Romblon</p>
+                <p><i class="icon_mail"></i> romblontransport@yahoo.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Footer Widget -->
+          <div class="col-12 col-sm-5 col-lg">
+            <div class="single-footer-widget">
+              <!-- Widget Title -->
+              <h5 class="widget-title">Quick Links</h5>
+              <!-- Quick Links Nav -->
+              <nav>
+                <ul class="quick-links">
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'products' %}">Products</a></li>
+                  <li><a href="{% url 'service' %}">Services</a></li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                  <li><a href="{% url 'booking' %}">Booking</a></li>
+                  <li><a href="{% url 'faq' %}">FAQs</a></li>
+                  <li><a href="{% url 'officers' %}">Officers</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copywrite Area -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="copywrite-content">
+              <p>Copyright &copy;2020 | All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- ******* All JS ******* -->
+    <!-- jQuery js -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- All js -->
+    <script src="{% static 'js/dento.bundle.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/default-assets/active.js' %}"></script>
+
+  </body>
+
+</html>

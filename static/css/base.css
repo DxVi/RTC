@@ -1,0 +1,254 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: monospace;
+    background-color: dodgerblue;
+} 
+ 
+.base-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.base-header{
+    flex-basis: 5%;
+}
+
+.base-header nav{
+    background-size: cover;
+}
+.rtc-logo img{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+
+    border-radius: 50%;
+    background: linear-gradient(145deg, #5c5c5c, #6d6d6d);
+    box-shadow:  5px 5px 10px #292929, 
+             -5px -5px 10px #a3a3a3;
+}
+
+.base-header a:hover{
+    text-decoration: none;
+    color: lightgreen;
+}
+
+.menu-btn{
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    
+    border-radius: 20px;
+    background: linear-gradient(145deg, #5c5c5c, #6d6d6d);
+    box-shadow:  5px 5px 10px #3d3d3d, 
+             -5px -5px 10px #8f8f8f;
+}
+
+.menu-text{
+    color:lightgray;
+    font-size: 1.2rem;
+}
+
+.header-text{
+    color: white;
+    font-size: 1.2rem;
+    text-shadow:1px 1px 2px #888888;
+    opacity: .8;
+}
+
+.title-text{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow:1px 1px 2px #888888;
+    opacity: .9;
+}
+
+.regular-text{
+    color: white;
+    font-size: 1.2rem;
+    text-shadow:1px 1px 2px #888888;
+    opacity: .7;
+}
+
+.services, .fare, .booking{
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.services li{
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+.services h4{
+    margin-left: 5rem;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow:1px 1px 2px #888888;
+    opacity: .7;
+    text-align: center;
+}
+
+.services h4:hover{
+    color: lightgreen;
+}
+
+.fare{
+    height: 1000px;
+}
+
+.fare button{
+    color:green;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #666666;
+    opacity: .8;
+}
+
+.fare th{
+    color: blue;
+    font-size: 1.3rem;
+    text-shadow:1px 1px 2px #888888;
+    opacity: .8;
+}
+.fare td{
+    color: lightblue;
+    font-size: 1.2rem;
+    /* opacity: .7; */
+    /* background-color: red; */
+    /* opacity: 0; */
+}
+
+
+.booking input,  
+.booking select, 
+.booking textarea{
+    /* color: blue; */
+    font-size: 1.2rem;
+    background-color: lightgreen;
+    opacity: .6;
+}
+
+
+.bg-gradient-overlay {
+    position: relative;
+    z-index: 1; }
+    .bg-gradient-overlay::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: dodgerblue;
+      background: -webkit-linear-gradient(to right, #666666, dodgerblue);
+      background: linear-gradient(to right, #666666, dodgerblue);
+      opacity: 0.75; }
+
+.base-content{
+    flex-basis: 90%;
+}
+
+.base-footer{
+    flex-basis: 5%;
+    background-color: #212121;
+    color: #888888;
+}
+
+
+
+@media screen and (max-width: 575px){
+     
+     
+    
+
+    
+
+}
+
+/********** HOME **********/
+.home-container{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/********** PRODUCTS **********/
+.products-container{
+    height:100%;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.category-sidebar{
+    height: 100%;
+    border: 1px solid  #888888;
+    flex-basis: 10%;
+    padding: .3rem;
+    display:flex;
+    flex-direction: column;
+    padding: 1%;
+    font-size: medium;
+}
+
+.category-sidebar a{
+    text-decoration: none;
+    color: white;
+}
+
+.category-header a{
+    color: lightblue;
+}
+
+.category-sidebar a:hover{
+    color: crimson;
+}
+
+.products-card-container{
+    height: 100%;
+    border: 1px solid  #888888;
+    flex-basis: 90%;
+    padding: .3rem;
+    margin-left: .5rem; 
+}
+
+.products-list{
+    height: 100%; 
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.products-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .2rem;
+    box-shadow: 1px 1px 2px #888888;
+    width: 5rem;
+    height: 15rem;
+}
+
+.products-card img{
+    width: 99%;
+    height: 70%;
+    border: 1px solid #888888;
+}
+
+.products-card h6,p{
+    color: #212121;
+    font-size: 75%;
+}
