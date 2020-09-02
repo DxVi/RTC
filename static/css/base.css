@@ -28,15 +28,16 @@ body {
              -5px -5px 10px #a3a3a3;
 }
 
-.base-menu{
-    height: 25rem;
+.menu-row1, .menu-row2, .menu-row3{
+    height: 15rem;
     display: flex;
     flex-direction: row;
     padding: 1rem;
-    flex-wrap: wrap;
     align-content: center;
     align-items: center;
     justify-content: space-around;
+
+    border: 1px solid red;
 }
 
 .base-header nav{
@@ -45,9 +46,9 @@ body {
 }
 
 .menu-btn{
-    width: 130px;
-    height: 100px;
-    line-height: 100px;
+    width: 140px;
+    height: 200px;
+    line-height: 200px;
     text-align: center;
     
     border-radius: 20px;
@@ -64,7 +65,7 @@ body {
 
 .menu-text{
     color:lightgray;
-    font-size: 200%;
+    font-size: 250%;
 }
 
 .header-text{
