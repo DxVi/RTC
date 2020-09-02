@@ -105,14 +105,18 @@ body {
 }
 
 .fare button{
-    color:green;
+    color:lightgreen;
     font-size: 1.5rem;
     text-shadow: 1px 1px 2px #666666;
     opacity: .8;
 }
 
+.fare button:hover{
+    text-decoration: none;
+    color: crimson;
+}
 .fare th{
-    color: blue;
+    color: lightblue;
     font-size: 1.3rem;
     text-shadow:1px 1px 2px #888888;
     opacity: .8;
@@ -120,11 +124,12 @@ body {
 .fare td{
     color: lightblue;
     font-size: 1.2rem;
-    /* opacity: .7; */
-    /* background-color: red; */
-    /* opacity: 0; */
+   
 }
 
+.about-content table, .card{
+    background-color: transparent;
+}
 
 .booking input,  
 .booking select, 
