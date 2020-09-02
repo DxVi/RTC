@@ -2,7 +2,6 @@ body {
     margin:0;
     padding:0;
     font-family: monospace;
-    background-color: dodgerblue
 } 
 .base-container{
     display: flex;
@@ -16,6 +15,8 @@ body {
     flex-basis: 10%;
     width: 100%;
     padding: 10px;
+    background-color: white;
+    background-size: cover;
 
     display: flex;
     justify-content: space-evenly;
@@ -48,13 +49,13 @@ body {
     animation: gradient 15s ease infinite;
 }
 
-.base-header img{
+/* .base-header img{
     height: 100%;
     width: 100%;
-}
+} */
 
 .base-header h1{
-    color: white;
+    color: blue;
     font-weight: bolder;
     text-shadow: 2px 2px 4px #888888;
 }
