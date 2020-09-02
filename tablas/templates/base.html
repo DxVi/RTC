@@ -20,66 +20,59 @@
 
   </head>
   <body>
-      <div class="base-container">
-          <div class="base-header">
-            <nav class="navbar navbar-expand-lg navbar-dark " style="background-image: url({% static 'img/site/banner.jpg' %});">
+    <div class="base-container">
 
-                <div class="rtc-logo">
-                    <a href="{% url 'home' %}" ><img src="{% static 'img/site/logo.png' %}" alt=""></a>
-                </div>
-                <a class="menu-btn menu-text" href="{% url 'home' %}">Home</a>
-                <a class="menu-btn menu-text" href="{% url 'booking' %}">Booking</a>
-                <a class="menu-btn menu-text" href="{% url 'contact' %}">Contact Us</a>
+          <div class="base-header" style="background-image: url({% static 'img/site/banner.jpg' %});">
+            <div class="rtc-logo">
+              <a href="{% url 'home' %}" ><img src="{% static 'img/site/logo.png' %}" alt=""></a>
+            </div>
+          </div>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> 
-              
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a class="nav-link  menu-text" href="{% url 'products'    %}">Products</a>
-                    <a class="nav-link  menu-text" href="{% url 'about'    %}">About</a>
-                    <a class="nav-link  menu-text" href="{% url 'service'  %}">Services</a>
-                    <a class="nav-link  menu-text" href="{% url 'officers' %}">Officers</a>
-                    <a class="nav-link  menu-text" href="{% url 'faq'      %}">FAQs</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle  menu-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      RTC
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="base-menu">
+            <div class="menu-btn">
+              <a class="menu-text" href="{% url 'home' %}">Home</a>
+            </div>
+
+            <div class="menu-btn">
+              <a class="menu-text" href="{% url 'about' %}">About</a>
+            </div>
+
+            <div class="menu-btn">
+              <a class="menu-text" href="{% url 'booking' %}">Booking</a>
+            </div>
+
+            <div class="menu-btn">
+              <a class="menu-text" href="{% url 'contact' %}">Contact Us</a>
+            </div>
+
+            <div class="menu-btn">
+              <a class="menu-text" href="{% url 'products' %}">Products</a>
+            </div>
+
+            <div class="menu-btn">
+              <a class="menu-text" href="{% url 'service' %}">Services</a>
+            </div>
+
+            <div class="menu-btn">
+              <a class="menu-text" href="{% url 'officers' %}">Officers</a>
+            </div>
+
+            <div class="menu-btn">
+              <a class="menu-text" href="{% url 'officers' %}">Officers</a>
+            </div>
+
+            <div class="menu-btn">
+              <a class="nav-link  menu-text" href="{% url 'faq'  %}">FAQs</a>
+            </div>
+          </div>
+
+                    <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item  menu-text" href="#">Member Login</a>
                       <a class="dropdown-item  menu-text" href="admin/">Admin</a>
                      
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item  menu-text" href="#">extras...</a>
-                    </div>
-                  </li>
-                </ul>
-       
-              </div>
-            </nav>
-          </div>
-
-          {% block breadcrumbs %}
-          <!-- ***** Breadcrumb Area Start ***** -->
-          <!-- <div class="breadcumb--con">
-            <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">{% block page_name %} {% endblock %}</li>
-                    </ol>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <!-- ***** Breadcrumb Area End ***** -->
-          {% endblock %}
+                    </div> -->
           
           <div class="base-content">
               {% block content %}
@@ -91,7 +84,7 @@
               <div class="footer-copyright text-center py-3">© 2020 Copyright: dixv</div>
             </footer>
           </div>
-      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

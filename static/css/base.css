@@ -6,23 +6,19 @@ body {
 } 
  
 .base-container{
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .base-header{
-    flex-basis: 20%;
-}
-
-.base-header nav{
+    height: 11.5rem;
+    padding: 1rem;
     background-size: cover;
 }
 
 .rtc-logo img{
     width: 150px;
     height: 150px;
-    background-repeat: no-repeat;
     background-position: center, center;
     background-size: cover;
 
@@ -32,21 +28,38 @@ body {
              -5px -5px 10px #a3a3a3;
 }
 
-.base-header a:hover{
-    text-decoration: none;
-    color: lightgreen;
+.base-menu{
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.base-header nav{
+    background-size: cover;
+    
 }
 
 .menu-btn{
-    width: 150px;
-    height: 50%;
-    line-height: 150px;
+    width: 130px;
+    height: 100px;
+    line-height: 100px;
     text-align: center;
     
     border-radius: 20px;
     background: linear-gradient(145deg, #5c5c5c, #6d6d6d);
     box-shadow:  5px 5px 10px #3d3d3d, 
              -5px -5px 10px #8f8f8f;
+    margin-bottom: 1rem;
+}
+
+.base-header a:hover{
+    text-decoration: none;
+    color: lightgreen;
 }
 
 .menu-text{
