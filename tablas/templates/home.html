@@ -7,28 +7,128 @@
 {% block content %}
 
   <!-- ***** About Area Start ***** -->
-  <!-- <section class="about" style="background-image: url({% static 'img/site/welcome1.png' %});">
+  <section class="about">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12">
           <div class="about-content">
             <div class="section-heading">
-              <h2 class="title-text">About Us</h2>
+              <h2>About Us</h2>
             </div>
             
             <p class="text-justify regular-text">
               <strong>ROMBLON TRANSPORT COOPERATIVE (RTC)</strong>  
               was formed in compliance with the PUV modernization program. 
-              To provide quality transport services, support the government
-              to modernize transport system and ultimately bring about
-              economic development and progress.
+              RTC aims to provide quality transport services, supports the 
+              government for modernized transport system and ultimately bring 
+              about economic progress.
             </p>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- ***** About Area End ***** -->
 
 
+  <!-- ***** Service Area Start ***** -->
+  <section class="service">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Our Services</h2>
+      </div>
+
+      <div class="row">
+        <div class="col12 col-sm"> <p class="regular-text">Sales of Vehicle Parts</p></div>
+        <div class="col12 col-sm"> <p class="regular-text">Sales of Vehicle Accessories</p></div>
+        <div class="col12 col-sm"> <p class="regular-text">AUV Operation</p></div>
+      </div>
+
+      <div class="row">
+        <div class="col12 col-sm"> <p class="regular-text">Jeepney Operation</p></div>
+        <div class="col12 col-sm"> <p class="regular-text">Tour Van Rental</p></div>
+        <div class="col12 col-sm"> <p class="regular-text">Car Insurance</p></div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Service Area End ***** --> 
+
+  <!-- ***** contact Area Start ***** -->
+  <section class="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Our Contact Details</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-5">
+            <h3>Phone</h3>
+            <h5>+63 9xxx xxx xxxx</h5>
+        </div>
+        <div class="col-12 col-sm-7">
+          <h3>Email</h3>
+          <h5>romblontransport@yahoo.com</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-5">
+            <h3>Website</h3>
+            <h5>rtc.heroku.com</h5>
+        </div>
+        <div class="col-12 col-sm-7">
+          <h3>Facebook</h3>
+          <h5>Romblon Transport Cooperative - RTC</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h3>Address</h3>
+          <h5>Poblacion, San Agustin, Romblon</h5>
+        </div>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col-12">
+          <img src="{% static 'img/site/c2.png' %}"  alt="...">
+        </div>
+      </div> -->
+
+      <div class="row">  
+        <!-- Contact Form -->
+        <div class="col-12 col-sm-12">
+          <div class="contact-form">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Get In Touch</h2>
+              <p>{{ message_name }}</p>
+              <p>{{ message_email }}</p>
+              <p>{{ message }}</p>
+              <div class="line"></div>
+            </div>
+            <!-- Form -->
+            <form action="{% url 'contact' %}" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
+                </div>
+                <div class="col-12">
+                  <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn rtc-btn">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div> 
+        </div>
+      </div> 
+    </div>
+  </section>
+  <!-- ***** Contact Area End ***** --> 
   {% endblock %}
