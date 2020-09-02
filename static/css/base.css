@@ -37,11 +37,6 @@ body {
     align-content: center;
     align-items: center;
     justify-content: space-around;
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center, center;
 }
 
 .menu-btn{
@@ -86,11 +81,13 @@ body {
 }
 
 .about, .services, .fare, .booking{
-    width: 100%;
-    height: 500px;
-    background-position: center, center;
-    background-size: cover;
+    /* width: 100%; */
+    /* height: 500px; */
+
+    background-size: contain;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center, center;
 }
 
 .services li{
