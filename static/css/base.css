@@ -39,7 +39,7 @@ body {
 
 .menu-btn{
     width: 150px;
-    height: 150px;
+    height: 50%;
     line-height: 150px;
     text-align: center;
     
@@ -51,7 +51,7 @@ body {
 
 .menu-text{
     color:lightgray;
-    font-size: .8rem;
+    font-size: 200%;
 }
 
 .header-text{
