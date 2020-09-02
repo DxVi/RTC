@@ -20,7 +20,17 @@
 
   </head>
   <body>
+
+    <script>
+      function getResolution() {
+          alert("Your screen resolution is: " + screen.width + "x" + screen.height);
+      }
+      </script>
+       
+      <button type="button" onclick="getResolution();">Get Resolution</button>
+
     <div class="base-container">
+
 
           <div class="base-header" style="background-image: url({% static 'img/site/bannerx.jpg' %});">
             <div class="rtc-logo">
