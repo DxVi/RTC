@@ -29,7 +29,7 @@ body {
 }
 
 .menu-items {
-    height: 30rem;
+    height: 27rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -87,14 +87,14 @@ body {
 
 .services, .fare, .booking{
     width: 100%;
-    height: 700px;
-    background-size: contain;
+    height: 500px;
+    background-size: auto;
     background-attachment: fixed;
 }
 
 .services li{
     list-style-type: none;
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
 }
 .services h4{
     margin-left: 5rem;
