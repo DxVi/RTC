@@ -2,7 +2,7 @@ body {
     margin:0;
     padding:0;
     font-family: monospace;
-    background-color: dodgerblue;
+    background-color: dodgerblue
 } 
  
 .base-container{
@@ -12,12 +12,13 @@ body {
 }
 
 .base-header{
-    flex-basis: 5%;
+    flex-basis: 10%;
 }
 
 .base-header nav{
     background-size: cover;
 }
+
 .rtc-logo img{
     width: 100px;
     height: 100px;
@@ -37,7 +38,7 @@ body {
 }
 
 .menu-btn{
-    width: 120px;
+    width: 100px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -50,7 +51,7 @@ body {
 
 .menu-text{
     color:lightgray;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .header-text{
@@ -152,7 +153,7 @@ body {
       opacity: 0.75; }
 
 .base-content{
-    flex-basis: 90%;
+    flex-basis: 85%;
 }
 
 .base-footer{
