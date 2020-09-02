@@ -11,9 +11,9 @@ body {
 }
 
 .base-header{
-    height: 11.5rem;
-    padding: 1rem;
-    background-size: cover;
+    height: 170px;
+    padding: 10px;
+    background-size: contain;
 }
 
 .rtc-logo img{
