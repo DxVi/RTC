@@ -5,31 +5,20 @@ body {
     background-color: dodgerblue
 } 
  
-.base-container{
-    display: flex;
-    flex-direction: column;
-}
-
 .base-header{
-    height: 170px;
+    height: 250px;
     padding: 10px;
 
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.rtc-logo img{
-    width: 150px;
-    height: 150px;
-    background-position: center, center;
-    background-size: cover;
-
-    border-radius: 50%;
-    background: linear-gradient(145deg, #5c5c5c, #6d6d6d);
-    box-shadow:  5px 5px 10px #292929, 
-             -5px -5px 10px #a3a3a3;
+.base-header h1{
+    color: white;
+    font-weight: bolder;
+    text-shadow: 3px 3px 5px #888888;
 }
-
 .menu-items {
     height: 27rem;
     display: flex;
