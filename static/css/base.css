@@ -28,28 +28,31 @@ body {
              -5px -5px 10px #a3a3a3;
 }
 
-.menu-row1, .menu-row2, .menu-row3{
-    height: 15rem;
+.menu-items {
+    height: 30rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 1rem;
     align-content: center;
     align-items: center;
     justify-content: space-around;
 
-    border: 1px solid red;
-}
-
-.base-header nav{
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center, center;
     
 }
 
 .menu-btn{
-    width: 31%;
-    height: 40%;
-    line-height: 500%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    line-height: 30%;
+    
     
     border-radius: 20px;
     background: linear-gradient(145deg, #5c5c5c, #6d6d6d);
