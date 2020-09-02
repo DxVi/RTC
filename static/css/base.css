@@ -6,13 +6,13 @@ body {
 .base-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     height: 200vh;
 }
 
 .base-header{
-    width: 100%;
+    width: 420px;
     height: 5%;
     background-size: cover;
     background-repeat: no-repeat;
