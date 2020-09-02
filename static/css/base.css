@@ -38,9 +38,9 @@ body {
 }
 
 .menu-btn{
-    width: 100px;
-    height: 50px;
-    line-height: 50px;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     
     border-radius: 20px;
@@ -51,7 +51,7 @@ body {
 
 .menu-text{
     color:lightgray;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .header-text{
