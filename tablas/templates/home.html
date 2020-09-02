@@ -7,7 +7,7 @@
 {% block content %}
   
   <!-- ***** Welcome Area Start ***** -->
-  <div id="carouselWelcome" class="carousel slide carousel-fade" data-ride="carousel">
+  <!-- <div id="carouselWelcome" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-interval="3000">
         <img src="{% static 'img/site/welcome1.png' %}" class="d-block w-100" alt="...">
@@ -19,11 +19,11 @@
         <img src="{% static 'img/site/welcome3.png' %}"  class="d-block w-100" alt="...">
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- ***** Welcome Area End ***** -->
 
   <!-- ***** About Area Start ***** -->
-  <section class="about">
+  <section class="about" style="background-image: url({% static 'img/site/welcome1.png' %});">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12">

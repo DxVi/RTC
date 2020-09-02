@@ -60,7 +60,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.base-header a:hover{
+.menu-btn a:hover{
     text-decoration: none;
     color: lightgreen;
 }
@@ -85,9 +85,10 @@ body {
     opacity: .7;
 }
 
-.services, .fare, .booking{
+.about, .services, .fare, .booking{
     width: 100%;
     height: 500px;
+    background-position: center, center;
     background-size: cover;
     background-attachment: fixed;
 }
