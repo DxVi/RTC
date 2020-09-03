@@ -11,7 +11,7 @@ body {
 }
 
 h2{
-    font-size: 500%;
+    font-size: 400%;
     color: blue;
     font-weight: bold;
     text-shadow:1px 1px 2px black;
@@ -20,7 +20,7 @@ h2{
 }
 
 h3{
-    font-size: 400%;
+    font-size: 300%;
     color: green;
     font-weight: bold;
     text-shadow:1px 1px 2px black;
@@ -28,7 +28,7 @@ h3{
 }
 
 h4{
-    font-size: 300%;
+    font-size: 250%;
     color: antiquewhite;
     text-shadow:1px 1px 2px black;
     opacity: .8;
@@ -90,7 +90,7 @@ h4{
 .menu-text{
     color:antiquewhite;
     font-weight: bolder;
-    font-size: 250%;
+    font-size: 500%;
     text-shadow:1px 1px 2px black;
     opacity: .8;
 }
@@ -102,7 +102,7 @@ h4{
 }
  
 .accordion button{
-    font-size: 100%;
+    font-size: 50%;
     color: darkcyan;
     font-weight: bold;
     text-shadow:1px 1px 2px black;
@@ -110,45 +110,8 @@ h4{
     padding:0;
 }
 
-/* 
-.accordion h3{
-    color: green;
-    font-size: 1.3rem;
-    text-shadow:3px 3px 5px #888888;
-    opacity: .8;
-    text-align: right;
-}
-
-.accordion h4{
-    color: green;
-    font-size: 2rem;
-    text-shadow:3px 3px 5px #888888;
-    opacity: .8;
-}
-.accordion p{
-    color: antiquewhite;
-    font-size: 2rem;
-    text-shadow:3px 3px 5px #888888;
-}
-
-.services li{
-    list-style-type: none;
-    margin-bottom: 1rem;
-}
-.services h4{
-    margin-left: 5rem;
-    color: white;
-    font-size: 2rem;
-    text-shadow:1px 1px 2px #888888;
-    opacity: .7;
-    text-align: center;
-}
-
-.services h4:hover{
-    color: lightgreen;
-} */
-
-.fare{
+ 
+/* .fare{
     height: 1000px;
 }
 
@@ -173,21 +136,9 @@ h4{
     color: lightblue;
     font-size: 1.2rem;
    
-}
+} */
 
-.about-content table, .card{
-    background-color: transparent;
-}
-
-.booking input,  
-.booking select, 
-.booking textarea{
-    /* color: blue; */
-    font-size: 1.2rem;
-    background-color: lightgreen;
-    opacity: .6;
-}
-
+ 
 
 .bg-gradient-overlay {
     position: relative;
@@ -210,23 +161,8 @@ h4{
 
 
 @media screen and (max-width: 575px){
-     
-     
-    
-
-    
-
 }
 
-/********** HOME **********/
-.home-container{
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
- 
 /********** PRODUCTS **********/
 .products-container{
     height:100%;
