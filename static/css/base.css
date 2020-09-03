@@ -51,8 +51,6 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center, center;
-
-    /* background-color:dodgerblue; */
 }
 
 .menu-btn{
@@ -62,13 +60,9 @@ body {
     width: 32%;
     height: 32%;
     margin-bottom: 1rem;
-    
     border-radius: 50px;
-    /* background: #00a2ff; */
     box-shadow:  5px 5px 10px gray, 
              -5px -5px 10px lightgray;
-
-    /* background-color: transparent; */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -116,9 +110,36 @@ body {
     padding: 1rem;
 }
 
+.accordion button{
+    color: blue;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow:3px 3px 5px #888888;
+    opacity: .9;
+}
 
+.accordion h3{
+    color: green;
+    font-size: 1.3rem;
+    text-shadow:3px 3px 5px #888888;
+    opacity: .8;
+    text-align: right;
+}
 
-
+.accordion h4{
+    color: green;
+    font-size: 1.3rem;
+    text-shadow:3px 3px 5px #888888;
+    opacity: .8;
+}
+.accordion p, .accordion li{
+    color: antiquewhite;
+    font-size: 1.3rem;
+    text-shadow:3px 3px 5px #888888;
+    /* opacity: .9; */
+    
+  
+}
 
 .services li{
     list-style-type: none;

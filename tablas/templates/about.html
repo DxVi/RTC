@@ -6,308 +6,227 @@
 
 {% block content %}
 
-  <!-- ****** About Us Area Start ******* -->
-  <section class="RTC-about-us-area section-padding-100-0">
+  <!-- ***** About Us Area Start ****** -->
+  <section class="about">
     <div class="container">
       <div class="row align-items-center">
-        <!-- About Us Thumbnail -->
-        <div class="col-12 col-md-6">
-          <div class="about-us-thumbnail mb-50">
-            <center>
-              <img src="{% static 'img/site/logo300.png' %}" alt="">
-            </center>
-          </div>
-        </div>
-        <!-- About Content -->
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-sm-12">
           <div class="about-us-content mb-50">
-            <!-- Section Heading -->
             <div class="section-heading">
               <h2>About Us</h2>
-              <div class="line"></div>
             </div>
-            <p>ROMBLON TRANSPORT COOPERATIVE (RTC)</span> was formed in compliance with the  
-              PUV  modernization   program. The existing  local transport operators  
-              and van owners joined  force  to  form  the  cooperative  complying 
-              with the standards set by law.</p>
-              <p>
-                <span>RTC</span> organized the association of Tourist, UV Express, Jeepney  and 
-                Rental transport  services in the Province of Romblon to provide 
-                quality transport services.
-              </p>
-              <p>
-                <span>RTC</span> aims to address transport problem and support the development and 
-                effort of the government to modernize transport system and ultimately 
-                bring about economic development and progress.
-              </p>
+            <p class="text-justify regular-text">
+              <strong>ROMBLON TRANSPORT COOPERATIVE (RTC)</strong>
+              was formed in compliance with the PUV modernization program. 
+              The existing local transport operators and van owners joined
+              force to form the cooperative, complying with the standards 
+              set by law.
+            </p>
+            <p class="text-justify regular-text">
+              <strong>RTC</strong> organized the association of Tourist, 
+              UV Express, Jeepney and Rental transport services in the 
+              Province of Romblon to provide quality transport services.
+            </p>
+            <p class="text-justify regular-text">
+              <strong>RTC</strong> aims to address transport problem and
+              support the development and effort of the government to 
+              modernize the transport system and ultimately bring about 
+              economic development and progress.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ****** About Us Area End ****** -->
+  <!-- ***** About Us Area End ***** -->
 
-  <div class="container">
-    <div class="RTC-border clearfix"></div>
-  </div>
-
-  <!-- Cool Facts Area Start -->
-  <section class="RTC-cta-area">
+  <!-- ***** Service Area Start ***** -->
+  <section class="service">
     <div class="container">
+      <div class="section-heading">
+        <h2>Our Services</h2>
+      </div>
+
       <div class="row">
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_genius"></i>
-            <h2><span class="counter">35</span></h2>
-            <h5>No. of Vans</h5>
-          </div>
-        </div>
+        <div class="col12 col-sm"> <p class="regular-text">* Sales of Vehicle Parts</p></div>
+        <div class="col12 col-sm"> <p class="regular-text">* Sales of Vehicle Accessories</p></div>
+      </div>
 
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_heart_alt"></i>
-            <h2><span class="counter">39</span></h2>
-            <h5>Founding Members</h5>
-          </div>
-        </div>
+      <div class="row">
+        <div class="col12 col-sm"> <p class="regular-text">* AUV Operation</p></div>
+        <div class="col12 col-sm"> <p class="regular-text">* Jeepney Operation</p></div>
+      </div>
 
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_book_alt"></i>
-            <h2><span class="counter">35</span></h2>
-            <h5>Owner/Operator</h5>
-          </div>
-        </div>
-
-        <!-- Cool Facts Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_id"></i>
-            <h2><span class="counter">4</span></h2>
-            <h5>Driver</h5>
-          </div>
-        </div>
+      <div class="row">
+        <div class="col12 col-sm"> <p class="regular-text">* Tour Van Rental</p></div>
+        <div class="col12 col-sm"> <p class="regular-text">* Car Insurance</p></div>
       </div>
     </div>
   </section>
-  <!-- Cool Facts Area End -->
+  <!-- ***** Service Area End ***** --> 
 
-  <!-- ***** LOB Area Start ***** -->
-  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'img/site/services.jpg' %});">
+  <!-- ***** GenInfo Area Start ***** -->
+  <section class="gen-info">
     <div class="container">
-      <div class="row">
-         <!-- Section Heading -->
-         <div class="section-heading white">
-          <h2>Our Services</h2>
-          <div class="line"></div>
-        </div>
-
-        <div class="col-12">
-          <!-- LOB Slides -->
-          <div class="testimonials-slides owl-carousel">
-
-            <!-- Single LOB Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static '/img/site/business1.jpg' %}" alt="">
+      <div class="accordion" id="accordionGenInfo">
+        <div class="card">
+          <div class="card-header" id="headingGenInfo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseGenInfo" aria-expanded="true" aria-controls="collapseGenInfo">
+                General Information 
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseGenInfo" class="collapse" aria-labelledby="headingGenInfo" data-parent="#accordionGenInfo">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>Cooperative Type</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>Transport</p>
+                </div>
               </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>Sales of Motor Vehicle Parts</h5>
-                <h6>“In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit mattis mollis maximus.”</h6>
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>Area of Operation</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>Provincial</p>
+                </div>
               </div>
-            </div>
-            <!-- Single LOB Slide -->
-            <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static '/img/site/business1.jpg' %}" alt="">
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>Bond of Membership</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>Occupational</p>
+                </div>
               </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>Sales of Motor Vehicle Accessories</h5>
-                <h6>“In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit mattis mollis maximus.”</h6>
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>Members</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>Workers, Employees, Operators & Drivers</p>
+                </div>
               </div>
-            </div>
-             <!-- Single LOB Slide -->
-             <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static '/img/site/business1.jpg' %}" alt="">
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>Founding Members</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>39</p>
+                </div>
               </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>AUV Operation</h5>
-                <h6>“In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit mattis mollis maximus.”</h6>
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>Address</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>Poblacion, San Agustin, Romblon</p>
+                </div>
               </div>
-            </div>
-             <!-- Single LOB Slide -->
-             <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static '/img/site/business1.jpg' %}" alt="">
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>CDA Reg. No.</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>9520-1018000000046928</p>
+                </div>
               </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>Jeepney Operation</h5>
-                <h6>“In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit mattis mollis maximus.”</h6>
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>BIR TIN</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>756-296-750-000</p>
+                </div>
               </div>
-            </div>
-             <!-- Single LOB Slide -->
-             <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static '/img/site/business1.jpg' %}" alt="">
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>Phone</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>+63 09xx xxx xxxx</p>
+                </div>
               </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>Tour Van Rental</h5>
-                <h6>“In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit mattis mollis maximus.”</h6>
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>Email</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>romblontransport@yahoo.com</p>
+                </div>
               </div>
-            </div> 
-             <!-- Single LOB Slide -->
-             <div class="single-testimonial-slide d-flex align-items-center">
-              <!-- Thumbnail -->
-              <div class="testimonial-thumb">
-                <img src="{% static '/img/site/business1.jpg' %}" alt="">
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>Website</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>https://rtc.heroku.com</p>
+                </div>
               </div>
-              <!-- Content -->
-              <div class="testimonial-content">
-                <h5>Car Insurance</h5>
-                <h6>“In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit mattis mollis maximus.”</h6>
+              <div class="row">
+                <div class="col-12 col-sm-5">
+                  <h3>Facebook</h3>
+                </div>
+                <div class="col-12 col-sm-7">
+                  <p>Romblon Transport Cooperative - RTC</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>  
     </div>
   </section>
-  <!-- ***** LOB Area End ***** -->
+  <!-- ***** GenInfo Area End ***** --> 
 
-  <!-- Terminal Area Start  -->
-  <!-- <section class="dentist-area section-padding-100-0">
+  <!-- ***** Purposes Area Start ***** -->
+  <section class="purposes">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-heading text-center">
-            <h2>Our Terminals</h2>
-            <div class="line"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="single-dentist-area mb-100">
-            <img src="{% static 'img/site/rtc.jpg' %}" alt="">
-            <div class="dentist-content">
-              <div class="dentist-info bg-gradient-overlay">
-                <h5>San Agustin</h5>
-                <p>J Moreno Blvd</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="single-dentist-area mb-100">
-            <img src="{% static 'img/site/rtc.jpg' %}" alt="">
-            <div class="dentist-content">
-              <div class="dentist-info bg-gradient-overlay">
-                <h5>San Agustin</h5>
-                <p>PUB & PUJ Terminal</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="single-dentist-area mb-100">
-            <img src="{% static 'img/site/rtc.jpg' %}" alt="">
-            <div class="dentist-content">
-              <div class="dentist-info bg-gradient-overlay">
-                <h5>Odiongan</h5>
-                <p>Public Market</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- Terminal Area End -->
-
-  <div class="about-GenInfo">
-    <div class="accordion" id="accordionGenInfo">
-      <div class="card">
-        <div class="card-header" id="headingGenInfo">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left title-text" type="button" data-toggle="collapse" data-target="#collapseGenInfo" aria-expanded="true" aria-controls="collapseGenInfo">
-              General Information
-            </button>
-          </h2>
-        </div>
-    
-        <div id="collapseGenInfo" class="collapse" aria-labelledby="headingGenInfo" data-parent="#accordionGenInfo">
-          <div class="card-body regular-text">
-            <table>
-                <tr><td>Type of Cooperative </td><td>: Transport</td></tr>
-                <tr><td>Area of Operation   </td><td>: Provincial</td></tr>
-                <tr><td>Bond of Membership  </td><td>: Occupational</td></tr>
-                <tr><td>Members             </td><td>: Workers, Employees, Operators & Drivers</td></tr>
-                <tr><td>Founding Members    </td><td>: 39</td></tr>
-                <tr><td>Address             </td><td>: Poblacion, San Agustin, Romblon</td></tr>
-                <tr><td>CDA Reg. No.        </td><td>: 9520-1018000000046928</td></tr>
-                <tr><td>BIR TIN             </td><td>: romblontransport@yahoo.com</td></tr>
-                <tr><td>Facebook            </td><td>: Romblon Transport Cooperative - RTC</td></tr>
-                <tr><td>Website             </td><td>: https://rtc.heroku.com</td></tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>  
-  </div>
-
-  <div class="about-purposes">
-    <div class="accordion" id="accordionPurposes">
+      <div class="accordion" id="accordionPurposes">
       <div class="card">
         <div class="card-header" id="headingPurposes">
           <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left title-text" type="button" data-toggle="collapse" data-target="#collapsePurposes" aria-expanded="true" aria-controls="collapsePurposes">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapsePurposes" aria-expanded="true" aria-controls="collapsePurposes">
               Purposes
             </button>
           </h2>
         </div>
     
         <div id="collapsePurposes" class="collapse" aria-labelledby="headingPurposes" data-parent="#accordionPurposes">
-          <div class="card-body regular-text">
-            <h6>This Cooperative is organized to engage in:</h6>
+          <div class="card-body">
+            <h4>RTC is organized to :</h4>
             <ol start="1">
-              <li>Provide transport services to members and commuting public;</li>
+              <li>Provide transport services</li>
               <li>Engage in businesses such as:
                 <ol type="a">
-                  <li>Sales of spare parts and supplies;</li>
-                  <li>Sales of Vehicle/Driver’s insurance policies;</li>
-                  <li>Auto Repair and Maintenance Shop;</li>
-                  <li>Vehicle Rental Services; and </li>
+                  <li>Sales of spare parts/supplies</li>
+                  <li>Vehicle/Driver’s insurance</li>
+                  <li>Auto Repair and Maintenance Shop</li>
+                  <li>Vehicle Rental Services</li>
                   <li>Micro Lending;</li>
                 </ol>
               </li>
-              <li>Promote economic and social status of members;</li>
-              <li>Coordinate and facilitate activities of cooperatives;</li>
-              <li>Advocate for the cause of cooperative movements;</li>
-              <li>Ensure viability of cooperatives through utilization of new technologies; and</li>
-              <li>Encourage, promote self-help or self-employment for economic growth and poverty alleviation.</li>
+              <li>Promote economic status of members</li>
+              <li>Coordinate activities of cooperatives</li>
+              <li>Advocate for cooperative movements</li>
+              <li>Utilize new technologies</li>
             </ol>
           </div>
         </div>
       </div>
-    </div>  
-  </div>
+    </div>   
+    </div>
+  </section>
+  <!-- ***** Purposes Area End ***** --> 
 
-    <div class="about-goals">
+  <!-- ***** Goals Area Start ***** -->
+  <section class="goals">
+    <div class="container">
       <div class="accordion" id="accordionGoals">
         <div class="card">
           <div class="card-header" id="headingGoals">
@@ -320,27 +239,29 @@
       
           <div id="collapseGoals" class="collapse" aria-labelledby="headingGoals" data-parent="#accordionGoals">
             <div class="card-body regular-text">
-              <h6>To help improve the quality life of its members and contribute to inclusive growth, enterprise development and employment. It shall aim:</h6>
+              <h4>To improve quality life, enterprise development and employment of its members; It shall aim:</h4>
               <ol start="1">
-                <li>To attain increased income, savings, investments, productivity, and equitable distribution of surplus;</li>
-                <li>To provide optimum social and economic benefits to its members;</li>
-                <li>To teach members of doing things in a Cooperative manner;</li>
-                <li>To propagate Cooperative practices;</li>
-                <li>To empower through provision of opportunities to the poor and less privileged groups;</li>
-                <li>To actively support the government, other Cooperatives and people-oriented organization;</li>
-                <li>To develop a dynamic savings mobilization and capital build-up schemes;</li>
-                <li>To adopt membership expansion scheme;</li>
-                <li>To ensure transparency, accountability and promote the interests of the members;</li>
-                <li>To adopt plans to foster the welfare of members, their families and the community;</li>
-                <li>To advance the competitiveness and innovativeness of the industry;</li>
-                <li>To coordinate with other Cooperatives on learning, trade and information exchanges;</li>
-                <li>To advocate legal framework and policies for the development of transport Cooperatives; and</li>
-                <li>To be the voice of the poor in resisting growth-centered development aggression.</li>
+                <li>To attain increased income, savings, investments and productivity</li>
+                <li>To provide social and economic benefits to its members</li>
+                <li>To teach members of doing things in a Cooperative manner</li>
+                <li>To propagate Cooperative practices</li>
+                <li>To provision opportunities to the poor and less privileged groups</li>
+                <li>To support the government, other Cooperatives and people-oriented organization</li>
+                <li>To develop savings mobilization and capital build-up</li>
+                <li>To adopt membership expansion scheme</li>
+                <li>To ensure transparency and accountability</li>
+                <li>To plan for the welfare of members, their families and the community</li>
+                <li>To advance competitiveness and innovativeness of the industry</li>
+                <li>To coordinate learning and trade with other Cooperatives</li>
+                <li>To advocate policies for the development of transport Cooperatives</li>
+                <li>To be the voice in resisting growth-centered development aggression</li>
               </ol>
             </div>
           </div>
         </div>
-      </div> 
-  </div>
+      </div>  
+    </div>
+  </section>
+  <!-- ***** Goals Area End ***** --> 
 
-  {% endblock %}
+{% endblock %}
