@@ -57,6 +57,8 @@ h4{
 
 .base-content{
     padding: 3rem;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .menu-items {
@@ -119,32 +121,19 @@ h4{
     background: transparent;
 }
  
-/* .fare{
-    height: 1000px;
-}
-
-.fare button{
-    color:lightgreen;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 2px #666666;
-    opacity: .8;
-}
-
-.fare button:hover{
-    text-decoration: none;
-    color: crimson;
-}
 .fare th{
-    color: lightblue;
-    font-size: 1.3rem;
-    text-shadow:1px 1px 2px #888888;
+    font-size: 210%;
+    color: green;
+    font-weight: bold;
+    text-shadow:1px 1px 2px black;
     opacity: .8;
 }
 .fare td{
-    color: lightblue;
-    font-size: 1.2rem;
-   
-} */
+    font-size: 250%;
+    color: antiquewhite;
+    text-shadow:1px 1px 2px black;
+    opacity: .8;
+}
 
  
 

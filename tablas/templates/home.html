@@ -145,4 +145,155 @@
   </div>
   <!-- ***** ContactUs Area End ***** --> 
 
+  <!-- ***** Fare Area Start ***** -->
+  <div class="fare">
+    <div class="row align-items-center">
+        <div class="col-12">
+          <div class="about-content">
+            <br/><br/>
+            <div class="section-heading">
+              <h2 class="title-text text-center">Van Rental Fare Matrix</h2>
+            </div>
+            
+            <div class="accordion" id="accordionFare">
+            <div class="card">
+              <div class="card-header" id="Odiongan">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Odiongan
+                  </button>
+                </h2>
+              </div>
+        
+              <div id="collapseOne" class="collapse show" aria-labelledby="Odiongan" data-parent="#accordionFare">
+                <div class="card-body">
+                  <!--Odiongan data -->
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Origin</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Rental Fare</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for rental in van_rentals %}
+                        {% if rental.origin == 'Odiongan' %}
+                          <tr>
+                            <td>{{ rental.origin }}</td>
+                            <td>{{ rental.destination }}</td>
+                            <td>PhP {{ rental.rental }}</td>
+                          </tr>
+                        {% endif %}
+                      {% endfor %} 
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="SanAgustin">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    San Agustin
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="SanAgustin" data-parent="#accordionFare">
+                <div class="card-body">
+                  <!--San Agustin data-->
+                  <table class="table table-hover ">
+                    <thead>
+                      <tr>
+                        <th scope="col">Origin</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Rental Fare</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for rental in van_rentals %}
+                        {% if rental.origin == 'San Agustin' %}
+                          <tr>
+                            <td>{{ rental.origin }}</td>
+                            <td>{{ rental.destination }}</td>
+                            <td>PhP {{ rental.rental }}</td>
+                          </tr>
+                        {% endif %}
+                      {% endfor %} 
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="Tugdan">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Tugdan
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="Tugdan" data-parent="#accordionFare">
+                <div class="card-body">
+                  <!--Tugdan data-->
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Origin</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Rental Fare</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for rental in van_rentals %}
+                        {% if rental.origin == 'Tugdan' %}
+                          <tr>
+                            <td>{{ rental.origin }}</td>
+                            <td>{{ rental.destination }}</td>
+                            <td>PhP {{ rental.rental }}</td>
+                          </tr>
+                        {% endif %}
+                      {% endfor %} 
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="Others">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Other Fares
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="Others" data-parent="#accordionFare">
+                <div class="card-body">
+                  <!--Others data-->
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Origin</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Rental Fare</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <br/><br/>
+  <!-- ***** Fare Area End *****-->
+
 {% endblock %}
