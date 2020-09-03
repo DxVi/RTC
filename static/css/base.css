@@ -8,14 +8,42 @@ body {
 .base-container{
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    height: 265vh;
+}
+
+h2{
+    color: blue;
+    font-weight: bold;
+    text-shadow:1px 1px 2px black;
+    opacity: .8;
+    margin-top: 3rem;
+}
+
+h3{
+    color: green;
+    font-weight: bold;
+    text-shadow:1px 1px 2px black;
+    opacity: .8;
+}
+
+h4{
+    color: antiquewhite;
+    text-shadow:1px 1px 2px black;
+    opacity: .8;
+}
+
+.contact h4{
+    color: antiquewhite;
+}
+
+.base-footer{
+    background-color: #666666;
+    color: antiquewhite;
+    text-shadow: 1px 1px 2px black;
 }
 
 .base-header{
     width: 100%;
-    height: 5%;
+    height: 100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, center;
@@ -23,23 +51,7 @@ body {
     border:2px solid gray;
 }
 
-.base-content{
-    flex-basis: 79%;
-}
-
-.base-footer{
-    flex-basis: 1%;
-    background-color: #212121;
-    color: #888888;
-}
-@keyframes gradient {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-}
- 
 .menu-items {
-    flex-basis: 15%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,8 +69,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32%;
-    height: 32%;
+    width: 150px;
+    height: 100px;
     margin-bottom: 1rem;
     border-radius: 50px;
     box-shadow:  5px 5px 10px gray, 
@@ -76,29 +88,8 @@ body {
     color:antiquewhite;
     font-weight: bolder;
     font-size: 250%;
-    text-shadow:3px 3px 5px gray;
+    text-shadow:1px 1px 2px black;
     opacity: .8;
-}
-
-.section-heading{
-    color: blue;
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow:3px 3px 5px #888888;
-    opacity: .9;
-}
-
-.regular-text, .contact h3{
-    color: white;
-    font-size: 2rem;
-    text-shadow:3px 3px 5px #888888;
-    opacity: .8;
-}
-
-.contact h5 {
-    color: #777777;
-    font-size: 200%;
-    text-shadow:3px 3px 5px #888888;
 }
 
 .contact img{
@@ -106,18 +97,17 @@ body {
     height: 262px;
     border:1px solid gray;
 }
-/* .about, .service, .contact{
-    padding: 1rem;
-} */
-
+ 
 .accordion button{
-    color: blue;
+    color: darkcyan;
     font-size: 2rem;
     font-weight: bold;
-    text-shadow:3px 3px 5px #888888;
+    text-shadow:1px 1px 2px black;
     opacity: .9;
+    padding:0;
 }
 
+/* 
 .accordion h3{
     color: green;
     font-size: 1.3rem;
@@ -153,7 +143,7 @@ body {
 
 .services h4:hover{
     color: lightgreen;
-}
+} */
 
 .fare{
     height: 1000px;
