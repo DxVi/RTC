@@ -110,6 +110,9 @@ h4{
     padding:0;
 }
 
+.accordion .card{
+    background: transparent;
+}
  
 /* .fare{
     height: 1000px;
