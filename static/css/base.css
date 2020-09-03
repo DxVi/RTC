@@ -132,7 +132,7 @@ body {
     text-shadow:3px 3px 5px #888888;
     opacity: .8;
 }
-.accordion p, .accordion li{
+.accordion p{
     color: antiquewhite;
     font-size: 2rem;
     text-shadow:3px 3px 5px #888888;
