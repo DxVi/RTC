@@ -128,17 +128,14 @@ body {
 
 .accordion h4{
     color: green;
-    font-size: 1.3rem;
+    font-size: 2rem;
     text-shadow:3px 3px 5px #888888;
     opacity: .8;
 }
 .accordion p, .accordion li{
     color: antiquewhite;
-    font-size: 1.3rem;
+    font-size: 2rem;
     text-shadow:3px 3px 5px #888888;
-    /* opacity: .9; */
-    
-  
 }
 
 .services li{
@@ -148,7 +145,7 @@ body {
 .services h4{
     margin-left: 5rem;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-shadow:1px 1px 2px #888888;
     opacity: .7;
     text-align: center;
