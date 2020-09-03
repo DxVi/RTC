@@ -10,6 +10,21 @@ body {
     flex-direction: column;
 }
 
+ 
+
+.about{
+    border: 1px solid green;
+    width:100%;
+    padding: 1rem;
+    
+}
+
+.base-content{
+    width: 100%;
+    justify-content: stretch;
+    
+}
+
 h2{
     font-size: 400%;
     color: blue;
@@ -93,6 +108,10 @@ h4{
     font-size: 400%;
     text-shadow:1px 1px 2px black;
     opacity: .8;
+}
+
+.about, .service, .contact, .gen-info, .purpose, .goals{
+    width: 100%;
 }
 
 .contact img{
