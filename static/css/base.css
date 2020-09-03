@@ -11,6 +11,7 @@ body {
 }
 
 h2{
+    font-size: 500%;
     color: blue;
     font-weight: bold;
     text-shadow:1px 1px 2px black;
@@ -19,6 +20,7 @@ h2{
 }
 
 h3{
+    font-size: 400%;
     color: green;
     font-weight: bold;
     text-shadow:1px 1px 2px black;
@@ -26,6 +28,7 @@ h3{
 }
 
 h4{
+    font-size: 300%;
     color: antiquewhite;
     text-shadow:1px 1px 2px black;
     opacity: .8;
@@ -99,8 +102,8 @@ h4{
 }
  
 .accordion button{
+    font-size: 100%;
     color: darkcyan;
-    font-size: 2rem;
     font-weight: bold;
     text-shadow:1px 1px 2px black;
     opacity: .9;
