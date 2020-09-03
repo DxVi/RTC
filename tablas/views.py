@@ -6,8 +6,7 @@ from .models import Product, Category, VanRental, Booking, Members, TripBoard, L
 
 
 def home(request):
-    van_rentals = VanRental.objects.all().order_by('origin','destination')
-    return render(request, 'home.html', {'van_rentals': van_rentals})
+    return render(request, 'home.html', {})
 
 def about(request):
     return render(request, 'about.html', {})    
@@ -125,3 +124,7 @@ def member(request):
         return render(request, 'member.html', {'switch': True, 'bookings': bookings, 'members': members, 'tripboard': tripboard, 'found': found})
     else:    
         return render(request, 'member.html', {'switch': False})
+
+def fares(request):
+    van_rentals = VanRental.objects.all().order_by('origin','destination')
+    return render(request, 'fares.html', {'van_rentals': van_rentals})
