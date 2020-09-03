@@ -135,7 +135,13 @@ h4{
     opacity: .8;
 }
 
- 
+.booking{
+   border: .5px solid antiquewhite;
+   background: linear-gradient(to right, antiquewhite, rgb(77, 42, 42));
+   width: 100%;
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
 
 .bg-gradient-overlay {
     position: relative;

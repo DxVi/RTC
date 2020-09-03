@@ -1,155 +1,152 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block breadcrumb    %} Booking {% endblock %}
-{% block page_name     %} Booking {% endblock %}
 
 {% block content %}
-{% if name %}
-    <center> 
-    <h1>Thank You !!!</h1>
-    <h3>You have booked for the following trips:</h3>
-        <h4>Date :  {{ date }}</h4>
-        <h4>Time :  {{ time }}</h4>
-        <h6>From: {{ tripfrom }}</h6>
-        <h6>To: {{ tripto }}</h6>
-        <h6>Passengers: {{ pax }}</h6>
-        <hr>
-        <h6>Name: {{ name }}</h6>
-        <h6>Phone: {{ phone }}</h6>
-        
-        <h6>Message: {{ message }}</h6>
-    </center>
-{% else %}
 
-<!-- Book A Trip Area Start -->
-<section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'img/site/booking_bg.jpg' %});">
-    <div class="container">
-      <div class="row">
-        <!-- Section Heading -->
-        <div class="col-12">
-          <div class="section-heading text-center white">
-            <h2>Book A Trip</h2>
-            <div class="line"></div>
+  {% if name %}
+      <center> 
+      <h1>Thank You !!!</h1>
+      <h3>You have booked for the following trips:</h3>
+          <h4>Date :  {{ date }}</h4>
+          <h4>Time :  {{ time }}</h4>
+          <h6>From: {{ tripfrom }}</h6>
+          <h6>To: {{ tripto }}</h6>
+          <h6>Passengers: {{ pax }}</h6>
+          <hr>
+          <h6>Name: {{ name }}</h6>
+          <h6>Phone: {{ phone }}</h6>
+          
+          <h6>Message: {{ message }}</h6>
+      </center>
+  {% else %}
+
+  <!-- Booking Area Start -->
+  <div class="booking">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading text-center">
+              <h2>Book A Trip</h2>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-12">
-          <!-- Appointment Form -->
-          <div class="appointment-form">
-            <form action="{% url 'booking' %}" method="POST">
-              {% csrf_token %}
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group mb-30">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        <div class="row">
+          <div class="col-12">
+            <div class="appointment-form">
+              <form action="{% url 'booking' %}" method="POST">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col col-sm-6">
+                    <div class="form-group mb-30">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                  </div>
+                  <div class="col col-sm-6">
+                    <div class="form-group mb-30">
+                      <input type="text" name="phone" class="form-control" placeholder="Your Phone" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                      <select name="tripfrom" class="form-control">
+                        <option value="origin">Origin</option>
+                        <option value="San Agustin">San Agustin</option>
+                        <option value="Odiongan">Odiongan</option>
+                        <option value="Calatrava">Calatrava</option>
+                        <option value="San Andres">San Andres</option>
+                        <option value="Sta. Maria">Sta. Maria</option>
+                        <option value="Alcantara">Alcantara</option>
+                        <option value="Ferrol">Ferrol</option>
+                        <option value="Looc">Looc</option>
+                        <option value="Sta. Fe">Sta. Fe</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                      <select name="tripto" class="form-control">
+                        <option value="destination">Destination</option>
+                        <option value="Odiongan">Odiongan</option>
+                        <option value="San Agustin">San Agustin</option>
+                        <option value="Calatrava">Calatrava</option>
+                        <option value="San Andres">San Andres</option>
+                        <option value="Sta. Maria">Sta. Maria</option>
+                        <option value="Alcantara">Alcantara</option>
+                        <option value="Ferrol">Ferrol</option>
+                        <option value="Looc">Looc</option>
+                        <option value="Sta. Fe">Sta. Fe</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                      <input type="text" name="date" class="form-control" placeholder="Date" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                      <select name="time" class="form-control">
+                        <option value="">Choose Your Trip Timing</option>
+                        <option value="09:00 AM">09:00 AM</option>
+                        <option value="02:00 PM">02:00 PM</option>
+                        <option value="05:00 PM">05:00 PM</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                      <select name="pax" class="form-control">
+                        <option value="">No. of passengers (including you) ?</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group mb-30">
+                      <textarea name="message" class="form-control" placeholder="Your Message"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Book Now</button>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group mb-30">
-                    <input type="text" name="phone" class="form-control" placeholder="Your Phone" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group mb-30">
-                    <select name="tripfrom" class="form-control">
-                      <option value="origin">Origin</option>
-                      <option value="San Agustin">San Agustin</option>
-                      <option value="Odiongan">Odiongan</option>
-                      <option value="Calatrava">Calatrava</option>
-                      <option value="San Andres">San Andres</option>
-                      <option value="Sta. Maria">Sta. Maria</option>
-                      <option value="Alcantara">Alcantara</option>
-                      <option value="Ferrol">Ferrol</option>
-                      <option value="Looc">Looc</option>
-                      <option value="Sta. Fe">Sta. Fe</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group mb-30">
-                    <select name="tripto" class="form-control">
-                      <option value="destination">Destination</option>
-                      <option value="Odiongan">Odiongan</option>
-                      <option value="San Agustin">San Agustin</option>
-                      <option value="Calatrava">Calatrava</option>
-                      <option value="San Andres">San Andres</option>
-                      <option value="Sta. Maria">Sta. Maria</option>
-                      <option value="Alcantara">Alcantara</option>
-                      <option value="Ferrol">Ferrol</option>
-                      <option value="Looc">Looc</option>
-                      <option value="Sta. Fe">Sta. Fe</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group mb-30">
-                    <input type="text" name="date" class="form-control" placeholder="Date" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group mb-30">
-                    <select name="time" class="form-control">
-                      <option value="">Choose Your Trip Timing</option>
-                      <option value="09:00 AM">09:00 AM</option>
-                      <option value="02:00 PM">02:00 PM</option>
-                      <option value="05:00 PM">05:00 PM</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group mb-30">
-                    <select name="pax" class="form-control">
-                      <option value="">No. of passengers (including you) ?</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                      <option value="13">13</option>
-                      <option value="14">14</option>
-                      <option value="15">15</option>
-                      <option value="16">16</option>
-                      <option value="17">17</option>
-                      <option value="18">18</option>
-                      <option value="19">19</option>
-                      <option value="20">20</option>
-                      <option value="21">21</option>
-                      <option value="22">22</option>
-                      <option value="23">23</option>
-                      <option value="24">24</option>
-                      <option value="25">25</option>
-                      <option value="26">26</option>
-                      <option value="27">27</option>
-                      <option value="28">28</option>
-                      <option value="29">29</option>
-                      <option value="30">30</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group mb-30">
-                    <textarea name="message" class="form-control" placeholder="Your Message"></textarea>
-                  </div>
-                </div>
-                <div class="col-12 text-center">
-                  <button type="submit" class="btn rtc-btn">Book Now</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- Book A Trip Area End -->
-{% endif%}
+        <br/><br/>
+  </div>
+  
+  <!-- Booking Area End -->
+  {% endif%}
+
 {% endblock %}
