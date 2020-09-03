@@ -106,9 +106,9 @@ body {
     height: 262px;
     border:1px solid gray;
 }
-.about, .service, .contact{
+/* .about, .service, .contact{
     padding: 1rem;
-}
+} */
 
 .accordion button{
     color: blue;
