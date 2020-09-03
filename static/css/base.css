@@ -79,9 +79,9 @@ h4{
     align-items: center;
     width: 250px;
     height: 200px;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     border-radius: 50px;
-    box-shadow:  5px 5px 10px gray, 
+    box-shadow:  5px 5px 10px #121212, 
              -5px -5px 10px lightgray;
     background-size: cover;
     background-repeat: no-repeat;
