@@ -90,7 +90,7 @@ h4{
 .menu-text{
     color:antiquewhite;
     font-weight: bolder;
-    font-size: 500%;
+    font-size: 400%;
     text-shadow:1px 1px 2px black;
     opacity: .8;
 }
@@ -102,7 +102,7 @@ h4{
 }
  
 .accordion button{
-    font-size: 50%;
+    font-size: 100%;
     color: darkcyan;
     font-weight: bold;
     text-shadow:1px 1px 2px black;
