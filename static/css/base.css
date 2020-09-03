@@ -48,10 +48,11 @@ body {
     align-items: center;
     justify-content: space-around;
 
-    background-size: cover;
+    background-size: auto;
+    background-repeat: no-repeat;
     background-position: center, center;
 
-    background-color:dodgerblue;
+    /* background-color:dodgerblue; */
 }
 
 .menu-btn{
@@ -63,11 +64,13 @@ body {
     margin-bottom: 1rem;
     
     border-radius: 50px;
-    background: #00a2ff;
+    /* background: #00a2ff; */
     box-shadow:  5px 5px 10px gray, 
              -5px -5px 10px lightgray;
 
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .menu-btn a:hover{
@@ -106,7 +109,8 @@ body {
 
 .contact img{
     width: 300px;
-    height: 200px;
+    height: 262px;
+    border:1px solid gray;
 }
 .about, .service, .contact{
     padding: 1rem;
