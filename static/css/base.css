@@ -8,21 +8,8 @@ body {
 .base-container{
     display: flex;
     flex-direction: column;
-}
-
- 
-
-.about{
-    border: 1px solid green;
-    width:100%;
-    padding: 2rem;
-    
-}
-
-.base-content{
     width: 100%;
-    justify-content: stretch;
-    
+    padding: 3rem;
 }
 
 h2{
@@ -87,7 +74,7 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 270px;
     height: 200px;
     margin-bottom: 1rem;
     border-radius: 50px;
@@ -108,10 +95,6 @@ h4{
     font-size: 400%;
     text-shadow:1px 1px 2px black;
     opacity: .8;
-}
-
-.about, .service, .contact, .gen-info, .purpose, .goals{
-    width: 100%;
 }
 
 .contact img{
