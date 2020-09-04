@@ -1,13 +1,22 @@
-.welcome-areax{
-    background-color:red;
-    border: 1px solid red;
-}
-
 .about-us-thumbnail{
     display:flex;
     justify-content: center;
     align-items: center;
 }
+
+.services-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    margin: 5px;
+}
+
 
 /*----------- BANNER/NAV AREA ----------*/
 .banner-img {
