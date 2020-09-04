@@ -22,8 +22,8 @@ def product(request):
     products = Product.objects.filter(category=category_id)
     return render(request, 'product.html', {'products': products, 'categories':categories})
 
-def service(request):
-    return render(request, 'service.html', {})
+def services(request):
+    return render(request, 'services.html', {})
 
 def contact(request):
     if request.method == 'POST':

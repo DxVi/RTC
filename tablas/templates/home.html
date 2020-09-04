@@ -2,24 +2,25 @@
 {% load static %}
 
 {% block content %}
-
   <!-- ***** Welcome Area Start ***** -->
   <section class="welcome-area">
     <!-- Welcome Slides -->
     <div class="welcome-slides owl-carousel">
       <!-- Single Welcome Slide -->
       <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'img/site/w1.jpg' %});">
-        <div class="container h-70">
-          <div class="row h-70 align-items-center">
+        <div class="container h-75">
+          <div class="row h-75 align-items-center">
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text text-center">
                 <h2 data-animation="fadeInUp" data-delay="100ms">
-                  &#10078;We are the 1st Transport Cooperative based in Romblon&#10078;</h2>
+                  &#10078;We are the 1st Transport Cooperative based in Romblon&#10078;
+                </h2>
                 <p data-animation="fadeInUp" data-delay="300ms">
-                  Under Registration No. 9520-1018000000046928 issued on September 18, 2019 by the Cooperative Development Authority</p>
+                  Under Registration No. 9520-1018000000046928 issued on September 18, 2019 by the Cooperative Development Authority
+                </p>
                 <div class="welcome-btn-group">
-                  <a href="{% url 'about' %}" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Book Now</a>
+                  <a href="{% url 'booking' %}" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Book Now</a>
                   <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
                 </div>
               </div>
@@ -27,239 +28,243 @@
           </div>
         </div>
       </div>
-
+  
       <!-- Single Welcome Slide -->
-      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'img/site/w2.jpg' %});">
-        <div class="container h-70">
-          <div class="row h-70 align-items-center">
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'img/site/w2.jpg' %});"> 
+        <div class="container h-75">
+          <div class="row h-75 align-items-center">
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text text-center">
                 <h2 data-animation="fadeInUp" data-delay="100ms">
-                  &#10078;We are the 1st Transport Cooperative based in Romblon&#10078;</h2>
+                  &#10078;We are the 1st Transport Cooperative based in Romblon&#10078;
+                </h2>
                 <p data-animation="fadeInUp" data-delay="300ms">
-                  Under Registration No. 9520-1018000000046928 issued on September 18, 2019 by the Cooperative Development Authority</p>
+                  Under Registration No. 9520-1018000000046928 issued on September 18, 2019 by the Cooperative Development Authority
+                </p>
                 <div class="welcome-btn-group">
-                  <a href="#" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
-                  <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact Us</a>
+                  <a href="{% url 'booking' %}" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Book Now</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact Us</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   </section>
   <!-- ***** Welcome Area End ***** -->
-
-  <!-- ****** About Us Area Start ******* -->
-  <section class="dento-about-us-area section-padding-100-0">
+  
+  <!-- ****** About Area Start ******* -->
+  <section class="about-area section-padding-50-0">
     <div class="container">
       <div class="row align-items-center">
         <!-- About Us Thumbnail -->
         <div class="col-12 col-md-6">
           <div class="about-us-thumbnail mb-50">
-            <img src="{% static 'img/site/logo150.png' %}" alt="">
+            <img src="{% static 'img/site/about.jpg' %}" alt="">
           </div>
         </div>
         <!-- About Content -->
         <div class="col-12 col-md-6">
           <div class="about-us-content mb-50">
-            <!-- Section Heading -->
-            <div class="section-heading">
-              <h2>About Us</h2>
-              <div class="line"></div>
-            </div>
-            <p>
-              &nbsp;<strong>ROMBLON TRANSPORT COOPERATIVE (RTC)</strong>  
-              was formed in compliance with the PUV modernization program. 
-              RTC aims to provide quality transport services, supports the 
-              government for modernized transport system and ultimately bring 
-              about economic progress.
-            </p>
-
-            <!-- Single Skills Area -->
-            <div class="single-skills-area mt-30">
-              <h6>Experience Dentist</h6>
-              <div id="bar1" class="barfiller">
-                <span class="tip"></span>
-                <span class="fill" data-percentage="80"></span>
+          <!-- Section Heading -->
+          <div class="section-heading">
+            <h2>About Us</h2>
+            <div class="line"></div>
+          </div>
+          <p class="text-justify"> 
+            &nbsp;<strong>ROMBLON TRANSPORT COOPERATIVE (RTC)</strong>  
+            was formed in compliance with the PUV modernization program. 
+            RTC aims to provide quality transport services, supports the 
+            government for modernized transport system and ultimately bring 
+            about economic progress.
+          </p>
+        </div> 
+      </div>
+    </div>  
+  </section>
+  <!-- ****** About Area End ****** -->
+  
+  <!-- ****** Services Area Start ******* -->
+    <section class="services-area section-padding-50-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Services Content -->
+          <div class="col-12 ">
+            <div class="services-content mb-50">
+              <!-- Section Heading -->
+              <div class="section-heading">
+                <h2>Our Services</h2>
+                <div class="line"></div>
               </div>
-            </div>
-
-            <!-- Single Skills Area -->
-            <div class="single-skills-area mt-30">
-              <h6>Modern Equipment</h6>
-              <div id="bar2" class="barfiller">
-                <span class="tip"></span>
-                <span class="fill" data-percentage="65"></span>
-              </div>
-            </div>
-
-            <!-- Single Skills Area -->
-            <div class="single-skills-area mt-30">
-              <h6>Friendly Staff</h6>
-              <div id="bar3" class="barfiller">
-                <span class="tip"></span>
-                <span class="fill" data-percentage="85"></span>
-              </div>
+              <div class="services-cards">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sales of Vehicle Parts</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sales of Vehicle Accessories</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">AUV Operation</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Jeepney Operation</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tour Van Rental</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Car Insurance</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div> 
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ****** About Us Area End ****** -->
-
-
-
-
-
-
-
-
-
-
-  <!-- ***** About Area Start ***** -->
-  <section class="section-padding-100">
-    <div class="about text-justify">
-        <h2>About Usx</h2>
-        <h4>
-          &nbsp;<strong>ROMBLON TRANSPORT COOPERATIVE (RTC)</strong>  
-          was formed in compliance with the PUV modernization program. 
-          RTC aims to provide quality transport services, supports the 
-          government for modernized transport system and ultimately bring 
-          about economic progress.
-        </h4>
-    </div>
-</section>
-  <!-- ***** About Area End ***** -->
-
-  <!-- ***** Service Area Start ***** -->
-  <div class="service">
-    <h2>Our Services</h2>
-
-    <div class="row">
-      <div class="col12 col-sm"> <h4>&nbsp;&rarr; Sales of Vehicle Parts</h4></div>
-    </div>
-    <div class="row"> 
-      <div class="col12 col-sm"> <h4>&nbsp;&rarr; Sales of Vehicle Accessories</h4></div>
-    </div>
-    <div class="row">
-      <div class="col12 col-sm"> <h4>&nbsp;&rarr; AUV Operation</h4></div>
-    </div>
-    <div class="row">
-      <div class="col12 col-sm"> <h4>&nbsp;&rarr; Jeepney Operation</h4></div>
-    </div>
-    <div class="row">
-      <div class="col12 col-sm"> <h4>&nbsp;&rarr; Tour Van Rental</h4></div>
-    </div>
-    <div class="row">
-      <div class="col12 col-sm"> <h4>&nbsp;&rarr; Car Insurance</h4></div>
-    </div>
-  </div>
-  <!-- ***** Service Area End ***** --> 
-
-  <!-- ***** Contact Area Start ***** -->
-  <div class="contact">
-    <h2>Our Contact Details</h2>
-
-    <div class="row">
-      <div class="col-12 col-sm-3">
-        <h3>Phone</h3>
-      </div>
-      <div class="col-12 col-sm-9">
-        <h4>+63 9xxx xxx xxxx</h4>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-sm-3">
-        <h3>Email</h3>
-      </div>
-      <div class="col-12 col-sm-9">
-        <h4>romblontransport@yahoo.com</h4>
-      </div>
-    </div>
-      
-    <div class="row">
-      <div class="col-12 col-sm-3">
-          <h3>Website</h3>
-      </div>
-      <div class="col-12 col-sm-9">
-        <h4>https://rtc2018.heroku.com</h4>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-sm-3">
-        <h3>Facebook</h3>
-      </div>
-      <div class="col-12 col-sm-9">
-        <h4>Romblon Transport Cooperative - RTC</h4>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-12 col-sm-3">
-        <h3>Address</h3>
-      </div>
-      <div class="col-12 col-sm-9">
-        <h4>Poblacion, San Agustin, Romblon</h4>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-12 col-sm-12 text-center">
-        <img src="{% static 'img/site/location.jpg' %}"  alt="...">
-      </div>
-    </div>
-  </div>
-  <!-- ***** Contact Area End ***** -->
-
-  <!-- ***** ContactUs Area Start ***** --> 
-  <div class="contact-us">
-      <div class="row">  
-        <div class="col-12 col-sm-12">
-          <div class="contact-form">
-            <div class="section-heading">
-              <h2>Contact Us</h2>
-              <p>{{ message_name }}</p>
-              <p>{{ message_email }}</p>
-              <p>{{ message }}</p>
-              <div class="line"></div>
-            </div>
-            <!-- Form -->
-            <form action="{% url 'contact' %}" method="post">
-              {% csrf_token %}
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="form-group mb-10">
-                    <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group mb-10">
-                     <input type="phone" name="message-email" class="form-control mb-30" placeholder="Your Phone">
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group mb-10">
-                     <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group mb-10">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div> 
+    </section>
+    <!-- ****** Services Area End ****** -->
+  
+  
+  
+  
+   <!-- ***** Contact Area Start ***** -->
+    <div class="contact">
+      <h2>Our Contact Details</h2>
+  
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <h3>Phone</h3>
         </div>
-      </div> 
-  </div>
-  <!-- ***** ContactUs Area End ***** --> 
+        <div class="col-12 col-sm-9">
+          <h4>+63 9xxx xxx xxxx</h4>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <h3>Email</h3>
+        </div>
+        <div class="col-12 col-sm-9">
+          <h4>romblontransport@yahoo.com</h4>
+        </div>
+      </div>
+        
+      <div class="row">
+        <div class="col-12 col-sm-3">
+            <h3>Website</h3>
+        </div>
+        <div class="col-12 col-sm-9">
+          <h4>https://rtc2018.heroku.com</h4>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <h3>Facebook</h3>
+        </div>
+        <div class="col-12 col-sm-9">
+          <h4>Romblon Transport Cooperative - RTC</h4>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <h3>Address</h3>
+        </div>
+        <div class="col-12 col-sm-9">
+          <h4>Poblacion, San Agustin, Romblon</h4>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-12 col-sm-12 text-center">
+          <img src="{% static 'img/site/location.jpg' %}"  alt="...">
+        </div>
+      </div>
+    </div>
+    <!-- ***** Contact Area End ***** -->
+  
+    <!-- ***** ContactUs Area Start ***** --> 
+    <div class="contact-us">
+        <div class="row">  
+          <div class="col-12 col-sm-12">
+            <div class="contact-form">
+              <div class="section-heading">
+                <h2>Contact Us</h2>
+                <p>{{ message_name }}</p>
+                <p>{{ message_email }}</p>
+                <p>{{ message }}</p>
+                <div class="line"></div>
+              </div>
+              <!-- Form -->
+              <form action="{% url 'contact' %}" method="post">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group mb-10">
+                      <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group mb-10">
+                       <input type="phone" name="message-email" class="form-control mb-30" placeholder="Your Phone">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group mb-10">
+                       <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group mb-10">
+                      <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div> 
+          </div>
+        </div> 
+    </div>
+    <!-- ***** ContactUs Area End ***** --> 
+  
+  
+
+  
+  
+
+ 
 
   <br/><br/>
 {% endblock %}
