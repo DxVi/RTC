@@ -1,7 +1,7 @@
 /*----------- BANNER/NAV AREA ----------*/
 .bg-img {
     background-image: url("/static/img/site/banner.jpg");
-    min-height:480px;
+    min-height:300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
