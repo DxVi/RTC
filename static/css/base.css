@@ -1,23 +1,60 @@
+* {
+    margin: 0;
+    padding: 0; }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px; }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    color: #333333;
+    line-height: 1.4;
+    font-weight: 600; }
+  
+  a,
+  a:active,
+  a:focus,
+  a:hover {
+    color: #333333;
+    text-decoration: none;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    outline: none; }
+  
+  li {
+    list-style: none; }
+  
+  p {
+    line-height: 1.9;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 400; }
+  
+  img {
+    max-width: 100%;
+    height: auto; }
+
+/*----------- BANNER/NAV AREA ----------*/
 .bg-img {
-    /* The image used */
     background-image: url("/static/img/site/banner.jpg");
-  
-    min-height: 480px;
-  
-    /* Center and scale the image nicely */
+    min-height:480px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
-    /* Needed to position the navbar */
     position: relative;
   }
   
-  /* Position the navbar container inside the image */
+  /* Position navbar container inside image */
   .container {
     float: right;
-    /* position: absolute; */
-    /* margin: 20px; */
     margin-top: 20px;
     width: auto;
   }
@@ -33,30 +70,29 @@
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    /* padding: 14px 16px; */
     text-decoration: none;
-    font-size: 17px;
+    font-size: 30px;
   }
   
   .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    color: #121212;
   }
+/*---------- BANNER/NAV AREA END ----------*/
 
-
-body {
-    margin:0;
-    padding:0;
-    font-family: monospace;
-    background: linear-gradient(to right, antiquewhite, dodgerblue);
-} 
+.section-padding {
+    padding: 2rem; }
+  
+.section-padding-0-100 {
+    padding-top: 0;
+    padding-bottom: 100px; }
 
 .base-container{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-
+/* 
 h2{
     font-size: 400%;
     color: blue;
@@ -83,7 +119,7 @@ h4{
 
 .contact h4{
     color: antiquewhite;
-}
+} */
 
 .base-footer{
     background-color: #666666;
@@ -91,7 +127,7 @@ h4{
     text-shadow: 1px 1px 2px black;
 }
 
-.base-header .navbar{
+/* .base-header .navbar{
     width: 100%;
     height: 500px;
     background-size: cover;
@@ -146,7 +182,7 @@ h4{
     font-size: 400%;
     text-shadow:1px 1px 2px black;
     opacity: .8;
-}
+} */
 
 .contact img{
     width: 300px;

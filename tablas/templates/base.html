@@ -4,9 +4,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <!-- <meta name="description" content="ROMBLON TRANSPORT COOPERATIVE (RTC)"> -->
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="description" content="ROMBLON TRANSPORT COOPERATIVE (RTC)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    
+    
 
     <!-- Title -->
     <title>RTC</title>
@@ -15,6 +17,7 @@
     <link rel="icon" href="{% static 'img/site/favicon.ico' %}">
 
     <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
@@ -30,8 +33,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'about' %}">General Info</a>
+                    <a class="dropdown-item" href="{% url 'service'  %}">Services</a>
+                    <a class="dropdown-item" href="{% url 'officers' %}">Officers</a>
+                    <a class="dropdown-item" href="{% url 'faq'      %}">FAQs</a>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'products' %}">Products</a>
@@ -45,19 +59,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'fares' %}">Fares</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About Us
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{% url 'about' %}">General Information</a>
-                    <a class="dropdown-item" href="{% url 'service'  %}">Services</a>
-                    <a class="dropdown-item" href="{% url 'officers' %}">Officers</a>
-                    <a class="dropdown-item" href="{% url 'faq'      %}">FAQs</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{% url 'faq'      %}">FAQs</a>
-                  </div>
-                </li>
+                
                 <li class="nav-item">
                   <a class="nav-link disabled" href="/admin" tabindex="-1" aria-disabled="true">Admin</a>
                 </li>
