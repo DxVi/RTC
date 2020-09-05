@@ -10,7 +10,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
 }
 
 .services-cards img{
@@ -20,6 +19,7 @@
 .services-cards .card {
     margin: 5px;
     background-color:transparent;
+    border: none;
 }
 
 .services-area h2, .services-area h5{
