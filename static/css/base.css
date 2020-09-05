@@ -10,13 +10,25 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
+    
 }
 
-.card {
+.services-cards img{
+    border-radius: 50px;
+}
+
+.services-cards .card {
     margin: 5px;
+    background-color:transparent;
 }
 
+.services-area h2, .services-area h5{
+    color: white;
+} 
+
+.services-cards p{
+    color: antiquewhite;
+}
 
 /*----------- BANNER/NAV AREA ----------*/
 .banner-img {
