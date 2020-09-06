@@ -247,14 +247,14 @@
     align-items: center;
     padding: .5rem;
     box-shadow: 1px 1px 2px #888888;
-    width: 8rem;
+    width: 15rem;
     height: 20rem;
     margin-bottom: 1rem;
 }
 
 .products-card img{
-    width: 10rem;
-    height: 10rem;
+    width: 16rem;
+    height: 13rem;
     border: 1px solid #888888;
 }
 
