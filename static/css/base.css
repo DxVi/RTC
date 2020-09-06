@@ -1,3 +1,4 @@
+
 /*----------- BASE ----------*/
 .banner-img {
     background-image: url("/static/img/site/banner.jpg");
@@ -52,7 +53,7 @@
     align-items: center;
 }
 
-.accordion button{
+.accordion button, .faq-area .inner-heading{
     font-size: 100%;
     color: blue;
     font-weight: bold;
@@ -61,12 +62,23 @@
     padding:0;
 }
 
+.faq-area h2{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    opacity: .9;
+}
+
+.faq-area h6, .faq-area li{
+    color: antiquewhite;
+    text-shadow: 1px 1px 2px black;
+    opacity: .9;
+}
+
 .accordion .card{
     background: transparent;
 }
 
 .accordion h3{
-    /* color: dodgerblue; */
     opacity: .8;
 }
 
@@ -91,11 +103,56 @@
 
 .services-area h2, .services-area h5{
     color: white;
+    text-shadow: 1px 1px 2px black;
+    opacity: .9;
 } 
 
 .services-cards p{
     color: antiquewhite;
+    text-shadow: 1px 1px 2px black;
 }
+
+/* --------- OFFICERS ----------*/
+.officers-container{
+    display:flex;
+    flex-direction: column;
+}
+.officers{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.officers img{
+    width: 150px;
+    height: 150px;
+}
+
+.officers-card, .officers-card .card-body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0;
+    margin:.5rem;
+}
+
+/* --------- BOOKING ----------*/
+.booking{
+    padding: 2rem;
+}
+
+.booking h2{
+    color:white;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* --------- BOOKING ----------*/
+.contact-area iframe{
+    width: 100%;
+    height: 300px;
+}
+
+
 
 /* --------- FARES ----------*/
 .fare th{
@@ -111,17 +168,6 @@
     text-shadow:1px 1px 2px black;
     opacity: .8;
 }
-
-/* --------- BOOKING ----------*/
-.booking{
-   border: .5px solid antiquewhite;
-   background: linear-gradient(to right, antiquewhite, rgb(77, 42, 42));
-   width: 100%;
-   padding-left: 2rem;
-   padding-right: 2rem;
-}
-
-
 /* --------- MISC ----------*/
 .bg-gradient-overlay {
     position: relative;

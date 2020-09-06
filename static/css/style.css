@@ -65,6 +65,7 @@ Last Update: Dec 05, 2018
   padding: 0; }
 
 body {
+  background: linear-gradient(to right, antiquewhite, dodgerblue);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px; }
@@ -76,15 +77,18 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-  color: #333333;
+  color:#2c455d;
   line-height: 1.4;
-  font-weight: 600; }
+  font-weight: 600; 
+  text-shadow: 1px 1px 2px gray;
+  opacity: .9;
+}
 
 a,
 a:active,
 a:focus,
 a:hover {
-  color: #333333;
+  color: #2c455d;
   text-decoration: none;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -92,13 +96,18 @@ a:hover {
   outline: none; }
 
 li {
-  list-style: none; }
+  /* list-style: none;  */
+  color: #2c455d;
+  text-shadow: 1px 1px 2px gray;
+}
 
 p {
   line-height: 1.9;
-  color: #707070;
+  color: #2c455d;
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400; 
+  text-shadow: 1px 1px 2px gray;
+}
 
 img {
   max-width: 100%;
