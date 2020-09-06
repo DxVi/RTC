@@ -155,7 +155,7 @@
 
 /* --------- FARES ----------*/
 .fare th{
-    font-size: 150%;
+    font-size: 100%;
     color: antiquewhite;
     font-weight: bold;
     text-shadow:1px 1px 2px black;
@@ -163,7 +163,7 @@
 }
 
 .fare td{
-    font-size: 150%;
+    font-size: 100%;
     color: antiquewhite;
     text-shadow:1px 1px 2px black;
     opacity: .8;
@@ -247,7 +247,7 @@
     align-items: center;
     padding: .5rem;
     box-shadow: 1px 1px 2px #888888;
-    width: 5rem;
+    width: 8rem;
     height: 20rem;
     margin-bottom: 1rem;
 }
