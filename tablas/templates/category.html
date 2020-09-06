@@ -4,13 +4,13 @@
 {% block page_name     %} Products {% endblock %}
 
 {% block content %}
-    <div class="products-container">
+    <section class="products-container bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'img/site/bridge.jpg' %});">
         <div class="category-sidebar">
             <div> 
-                <a class="title-text" href="{% url 'products' %}">Categories</a>
+                <a href="{% url 'products' %}"><strong>Categories</strong></a>
             </div>
             {% for category in categories %}
-                <a class="regular-text" href="/products/category/?id={{category.id}}">{{ category.name }}</a>
+                <a href="/products/category/?id={{category.id}}">{{ category.name }}</a>
             {% endfor%}
         </div>
         <div class="products-card-container">

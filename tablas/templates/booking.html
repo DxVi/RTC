@@ -30,8 +30,9 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row boxshadow">
           <div class="col-12">
+            <br/>
             <div class="appointment-form">
               <form action="{% url 'booking' %}" method="POST">
                 {% csrf_token %}
@@ -141,6 +142,7 @@
                 </div>
               </form>
             </div>
+            <br/>
           </div>
         </div>
         <br/><br/>

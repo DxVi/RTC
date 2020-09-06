@@ -55,7 +55,7 @@
 
 .accordion button, .faq-area .inner-heading{
     font-size: 100%;
-    color: blue;
+    color: lightgreen;
     font-weight: bold;
     text-shadow:1px 1px 2px black;
     opacity: .9;
@@ -79,7 +79,7 @@
 }
 
 .accordion h3{
-    opacity: .8;
+  opacity: .8;
 }
 
 /* --------- SERVICES ----------*/
@@ -92,7 +92,8 @@
 }
 
 .services-cards img{
-    border-radius: 50px;
+    box-shadow: 3px 3px 5px #121212;
+    border-radius: 20px;  
 }
 
 .services-cards .card {
@@ -141,7 +142,7 @@
     padding: 2rem;
 }
 
-.booking h2{
+.booking h2, .fare h2{
     color:white;
     text-shadow: 1px 1px 2px black;
 }
@@ -152,22 +153,22 @@
     height: 300px;
 }
 
-
-
 /* --------- FARES ----------*/
 .fare th{
-    font-size: 210%;
-    color: green;
+    font-size: 150%;
+    color: antiquewhite;
     font-weight: bold;
     text-shadow:1px 1px 2px black;
     opacity: .8;
 }
+
 .fare td{
-    font-size: 250%;
+    font-size: 150%;
     color: antiquewhite;
     text-shadow:1px 1px 2px black;
     opacity: .8;
 }
+
 /* --------- MISC ----------*/
 .bg-gradient-overlay {
     position: relative;
@@ -185,6 +186,10 @@
       background: linear-gradient(to right, #666666, dodgerblue);
       opacity: 0.75; }
 
+.boxshadow, .officers-card, .products-card img {
+    box-shadow: 3px 3px 5px #121212;
+    border-radius: 20px;  
+}
 @media screen and (max-width: 575px){
 }
 
@@ -198,32 +203,27 @@
 
 .category-sidebar{
     height: 100%;
-    border: 1px solid  #888888;
-    flex-basis: 10%;
+    flex-basis: 30%;
     padding: .3rem;
     display:flex;
     flex-direction: column;
     padding: 1%;
-    font-size: medium;
+    font-size: large;
 }
 
 .category-sidebar a{
     text-decoration: none;
-    color: white;
-}
-
-.category-header a{
-    color: lightblue;
+    color: antiquewhite;
 }
 
 .category-sidebar a:hover{
-    color: crimson;
+    color: lightgreen;
 }
 
 .products-card-container{
     height: 100%;
-    border: 1px solid  #888888;
-    flex-basis: 90%;
+    /* border: 1px solid  #888888; */
+    flex-basis: 70%;
     padding: .3rem;
     margin-left: .5rem; 
 }
@@ -236,6 +236,8 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom: 4rem;
+
+    
 }
 
 .products-card{
@@ -243,15 +245,16 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: .2rem;
+    padding: .5rem;
     box-shadow: 1px 1px 2px #888888;
     width: 5rem;
-    height: 15rem;
+    height: 20rem;
+    margin-bottom: 1rem;
 }
 
 .products-card img{
-    width: 99%;
-    height: 70%;
+    width: 10rem;
+    height: 10rem;
     border: 1px solid #888888;
 }
 
