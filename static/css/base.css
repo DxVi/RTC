@@ -1,9 +1,76 @@
+/*----------- BASE ----------*/
+.banner-img {
+    background-image: url("/static/img/site/banner.jpg");
+    min-height:200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .rtc-nav {
+    /* Position navbar container inside image */
+    float: right;
+    margin-top: 20px;
+    width: auto;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  .navbar a:hover {
+    color: #121212;
+  }
+
+  .base-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} 
+
+.base-footer{
+    background-color: #555555;
+    color: antiquewhite;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* --------- ABOUT ----------*/
 .about-us-thumbnail{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+.accordion button{
+    font-size: 100%;
+    color: blue;
+    font-weight: bold;
+    text-shadow:1px 1px 2px black;
+    opacity: .9;
+    padding:0;
+}
+
+.accordion .card{
+    background: transparent;
+}
+
+.accordion h3{
+    /* color: dodgerblue; */
+    opacity: .8;
+}
+
+/* --------- SERVICES ----------*/
 .services-cards{
     display: flex;
     flex-direction: row;
@@ -30,75 +97,7 @@
     color: antiquewhite;
 }
 
-/*----------- BANNER/NAV AREA ----------*/
-.banner-img {
-    background-image: url("/static/img/site/banner.jpg");
-    min-height:200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  /* Position navbar container inside image */
-  .rtc-nav {
-    float: right;
-    margin-top: 20px;
-    width: auto;
-  }
-  
-  /* The navbar */
-  .navbar {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Navbar links */
-  .navbar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    /* padding: 14px 16px; */
-    text-decoration: none;
-    font-size: 30px;
-  }
-  
-  .navbar a:hover {
-    color: #121212;
-  }
-/*---------- BANNER/NAV AREA END ----------*/
-
-.base-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-} 
-
-.base-footer{
-    background-color: #555555;
-    color: antiquewhite;
-    text-shadow: 1px 1px 2px black;
-}
- 
-.contact img{
-    width: 300px;
-    height: 262px;
-    border:1px solid gray;
-}
- 
-.accordion button{
-    font-size: 100%;
-    color: darkcyan;
-    font-weight: bold;
-    text-shadow:1px 1px 2px black;
-    opacity: .9;
-    padding:0;
-}
-
-.accordion .card{
-    background: transparent;
-}
- 
+/* --------- FARES ----------*/
 .fare th{
     font-size: 210%;
     color: green;
@@ -113,6 +112,7 @@
     opacity: .8;
 }
 
+/* --------- BOOKING ----------*/
 .booking{
    border: .5px solid antiquewhite;
    background: linear-gradient(to right, antiquewhite, rgb(77, 42, 42));
@@ -121,6 +121,8 @@
    padding-right: 2rem;
 }
 
+
+/* --------- MISC ----------*/
 .bg-gradient-overlay {
     position: relative;
     z-index: 1; }
@@ -137,14 +139,10 @@
       background: linear-gradient(to right, #666666, dodgerblue);
       opacity: 0.75; }
 
-
-
-
-
 @media screen and (max-width: 575px){
 }
 
-/********** PRODUCTS **********/
+/* --------- PRODUCTS ----------*/
 .products-container{
     height:100%;
     padding: .5rem;
